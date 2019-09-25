@@ -1,0 +1,42 @@
+<template>
+  <div class="koaButton">
+    <div class="main">
+      <slot></slot>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "KoaButton",
+  props: {
+    text: String
+  }
+}
+</script>
+
+<style lang="scss" scoped>
+.main {
+  position: relative;
+  background-color: #10cfc9;
+  color: white;
+  font-size: 22px;
+  width: 250px;
+  height: 57px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffe904;
+    transform: translate3d(5px, 4px, 0);
+    z-index: -1;
+  }
+}
+
+</style>
