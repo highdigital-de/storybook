@@ -41,8 +41,9 @@ export default {
   top: 0;
   right: 0;
   height: 102px;
-  background-color: grey;
+  background-color: transparent;
   display: flex;
+  z-index: 10;
 }
 .left {
   padding-top: 45px;
