@@ -26,6 +26,8 @@ export default {
   text-align: center;
   padding-top: 15px;
   box-sizing: border-box;
+  cursor: pointer;
+  transition: background-color 0.3s;
   &:after {
     content: "";
     position: absolute;
@@ -36,6 +38,9 @@ export default {
     background-color: #ffe904;
     transform: translate3d(5px, 4px, 0);
     z-index: -1;
+  }
+  &:hover, &:focus {
+    background-color: darken(#10cfc9, 10%);
   }
 }
 
