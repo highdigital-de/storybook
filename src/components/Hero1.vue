@@ -10,7 +10,13 @@
             :background="item.background"
             :image="item.image"
             :class="index === 0 ? customClass1 : index === 1 ? customClass2 : customClass3"
-          />
+          >
+            <template #call-to-action>
+              <sf-button>
+                koffein-kakao kaufen
+              </sf-button>
+            </template>
+          </SfHeroItem>
         </div>
       </template>
     </SfHero>
@@ -19,6 +25,7 @@
 
 <script>
 import SfHero from '@storefront-ui/vue/src/components/organisms/SfHero/SfHero.vue'
+import SfButton from '@storefront-ui/vue/src/components/atoms/SfButton/SfButton.vue'
 
 export default {
   name: "Hero1",
@@ -30,7 +37,7 @@ export default {
           buttonText: "Kauf dich wach",
           subtitle: "Mache mit einer Tasse koawach die Welt Schluck für Schluck fairer. Dank bester fair gehandelter Zutaten bleibt mehr bei den Bauern in Lateinamerika und mehr Genuss bei dir.",
           background: "#eceff1",
-          image: "https://i.ibb.co/Jn6JRGh/hero-bg-left.png"
+          image: "/img/cacao-bg.jpg"
         },
         {
           title: "Colorful summer dresses are already in store",
@@ -50,7 +57,8 @@ export default {
     }
   },
   components: {
-    SfHero
+    SfHero,
+    SfButton
   }
 }
 </script>
