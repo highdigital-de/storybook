@@ -16,6 +16,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.koaButton {
+  z-index: 1;
+}
 .main {
   position: relative;
   background-color: #10cfc9;
@@ -30,7 +33,7 @@ export default {
   transition: background-color 0.3s;
   font-family: Poets;
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     left: 0;
     top: 0;
@@ -38,7 +41,7 @@ export default {
     bottom: 0;
     background-color: #ffe904;
     transform: translate3d(5px, 4px, 0);
-    z-index: -1;
+    z-index: -1 ;
   }
   &:hover, &:focus {
     background-color: darken(#10cfc9, 10%);
