@@ -24,10 +24,11 @@ export default {
   width: 250px;
   height: 57px;
   text-align: center;
-  padding-top: 15px;
+  padding-top: 17px;
   box-sizing: border-box;
   cursor: pointer;
   transition: background-color 0.3s;
+  font-family: Poets;
   &:after {
     content: "";
     position: absolute;
