@@ -20,12 +20,17 @@ export default {
     heading: String,
     cta: String,
     image: String,
-    highlight: Boolean
+    highlight: Boolean,
+    highlightColor: {
+      type: String,
+      default: '#10cfc9'
+    }
   },
   computed: {
     tileStyle() {
       return {
-        backgroundImage: 'url(' + this.image + ')'
+        backgroundImage: 'url(' + this.image + ')',
+        boxShadow: this.highlight ? '0px 0px 0px 12px ' + this.highlightColor + ' inset' : ''
       }
     }
   }
@@ -41,9 +46,6 @@ export default {
   background-size: cover;
   background-color: #e3e3e3;
   box-sizing: border-box;
-  &.highlight {
-    box-shadow:0px 0px 0px 12px #10cfc9 inset;
-  }
 }
 .mainSlot {
   position: absolute;
