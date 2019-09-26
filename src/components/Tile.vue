@@ -12,7 +12,7 @@
 import HeadingCTA from './HeadingCTA.vue'
 
 export default {
-  name: "Banner1",
+  name: "Tile",
   components: {
     HeadingCTA
   },
