@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Poets;
+  src: local("Poets Bold"),
+  local("Poets-Bold"),
+  url(fonts/Poets_bold.ttf);
+  font-weight: bold;
+}
+@font-face {
+  font-family: Futura;
+  src: local("Futura Medium"),
+  local("Futura-Medium"),
+  url(fonts/Futura_medium.ttf);
+  font-weight: Medium;
+}
+
+body {
+  font-family: Futura;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Poets;
+  font-weight: bold;
+}
