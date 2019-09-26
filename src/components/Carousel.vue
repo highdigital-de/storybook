@@ -1,20 +1,8 @@
 <template>
   <div class="carousel">
-    <SfCarousel :settings="options">
-      <SfCarouselItem>
-        <img class="image" src="/img/carousel1.png" />
-      </SfCarouselItem>
-      <SfCarouselItem>
-        <img class="image" src="/img/carousel2.png" />
-      </SfCarouselItem>
-      <SfCarouselItem>
-        <img class="image" src="/img/carousel3.png" />
-      </SfCarouselItem>
-      <SfCarouselItem>
-        <img class="image" src="/img/carousel1.png" />
-      </SfCarouselItem>
-      <SfCarouselItem>
-        <img class="image" src="/img/carousel2.png" />
+    <SfCarousel :settings="settings">
+      <SfCarouselItem v-for="(item, index) in items" :key="index">
+        <img class="image" :src="item.image" />
       </SfCarouselItem>
     </SfCarousel>
   </div>
@@ -25,11 +13,17 @@ import SfCarousel from '@storefront-ui/vue/src/components/organisms/SfCarousel/S
 
 export default {
   name: "Carousel",
+  props: {
+    items: Array,
+    settings: {
+      type: Object,
+      default: {
+        perView: 3
+      }
+    }
+  },
   data() {
     return {
-      options: {
-        perView: 3,
-      }
     }
   },
   components: {
