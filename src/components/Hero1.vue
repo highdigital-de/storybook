@@ -12,9 +12,9 @@
             :class="index === 0 ? customClass1 : index === 1 ? customClass2 : customClass3"
           >
             <template #call-to-action>
-              <sf-button>
+              <KoaButton>
                 koffein-kakao kaufen
-              </sf-button>
+              </KoaButton>
             </template>
           </SfHeroItem>
         </div>
@@ -26,9 +26,15 @@
 <script>
 import SfHero from '@storefront-ui/vue/src/components/organisms/SfHero/SfHero.vue'
 import SfButton from '@storefront-ui/vue/src/components/atoms/SfButton/SfButton.vue'
+import KoaButton from './KoaButton.vue'
 
 export default {
   name: "Hero1",
+  components: {
+    SfHero,
+    SfButton,
+    KoaButton
+  },
   data() {
     return {
       items: [
@@ -55,10 +61,6 @@ export default {
         }
       ]
     }
-  },
-  components: {
-    SfHero,
-    SfButton
   }
 }
 </script>

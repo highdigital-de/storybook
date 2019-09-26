@@ -35,13 +35,13 @@ export default {
   display: flex;
 }
 .left {
-  flex: 0 1 50%;
+  flex: 1 1 50%;
   padding: 80px;
 }
 .text {
   margin-bottom: 30px;
 }
 .right {
-  flex: 0 1 50%;
+  flex: 1 1 50%;
 }
 </style>
