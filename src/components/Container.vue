@@ -16,6 +16,7 @@ export default {
   width: 100%;
   max-width: 1020px;
   margin: auto;
+  padding: 0 5px;
   box-sizing: border-box;
 }
 </style>
