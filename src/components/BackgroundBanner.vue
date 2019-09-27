@@ -39,6 +39,7 @@ export default {
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 80px;
+  margin: auto;
   box-sizing: border-box;
 }
 </style>
