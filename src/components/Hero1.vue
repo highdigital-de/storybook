@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="hero1Container">
+  <div class="hero1">
     <SfHero :sliderOptions="{autoplay: false}">
       <template>
         <div v-for="(item, index) in items" :key="index">
@@ -20,6 +21,7 @@
         </div>
       </template>
     </SfHero>
+  </div>
   </div>
 </template>
 
@@ -64,3 +66,14 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+.hero1Container {
+  filter: drop-shadow(0px 4px 0px #10cfc9);
+}
+.hero1 {
+  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
+  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
+  box-shadow: 0px 0px 0px 4px #10cfc9 inset;
+}
+</style>
