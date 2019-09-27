@@ -56,6 +56,9 @@ export default {
   background-color: transparent;
   display: flex;
   z-index: 10;
+  a {
+    text-decoration: none;
+  }
 }
 .left {
   padding-top: 33px;
