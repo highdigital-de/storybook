@@ -1,6 +1,8 @@
 <template>
-  <div class="topBar">
-    <img src="/img/koa-logo.png" class="logo">
+  <div class="topBar" :style="style">
+    <div class="logoContainer">
+      <img src="/img/koa-logo.png" class="logo">
+    </div>
     <div class="left">
       <a class="link">
         koffein kakao
@@ -25,11 +27,22 @@
 
 export default {
   name: "TopBar",
+  props: {
+    marginTop: {
+      type: Number,
+      default: 0
+    }
+  },
   data() {
     return {
     }
   },
-  components: {
+  computed: {
+    style() {
+      return {
+        top: this.marginTop
+      }
+    }
   }
 }
 </script>
@@ -38,7 +51,6 @@ export default {
 .topBar {
   position: absolute;
   left: 0;
-  top: 0;
   right: 0;
   height: 102px;
   background-color: transparent;
@@ -46,7 +58,7 @@ export default {
   z-index: 10;
 }
 .left {
-  padding-top: 45px;
+  padding-top: 33px;
   flex: 1 0 auto;
 }
 .right {
@@ -57,10 +69,19 @@ export default {
   color: white;
   padding: 5px 15px;
 }
-.logo {
-  width: 227px;
-  float: left;
-  flex: 0 1 auto;
+.logoContainer {
   background-color: white;
+  padding-top: 20px;
+  padding-left: 70px;
+  box-sizing: border-box;
+  flex: 0 1 auto;
+  transform: rotate(-6deg) translateY(-12px);
+  width: 227px;
+  height: 90px;
+}
+.logo {
+  width: 120px;
+  height: auto;
+  transform: rotate(6deg);
 }
 </style>

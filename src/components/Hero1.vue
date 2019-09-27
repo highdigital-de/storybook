@@ -1,5 +1,5 @@
 <template>
-  <div style="max-width: 1240px; margin: auto; margin-bottom: 50px;">
+  <div>
     <SfHero :sliderOptions="{autoplay: false}">
       <template>
         <div v-for="(item, index) in items" :key="index">

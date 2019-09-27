@@ -29,5 +29,6 @@ export default {
 }
 .subtitle {
   font-size: 22px;
+  margin-bottom: 40px;
 }
 </style>

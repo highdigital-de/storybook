@@ -15,7 +15,7 @@ export default {
 .container {
   width: 100%;
   max-width: 1020px;
-  margin: auto;
+  margin: 25px auto;
   padding: 0 5px;
   box-sizing: border-box;
 }
