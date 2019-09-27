@@ -32,6 +32,7 @@ export default {
   padding: 8px 13px;
   flex: 0 1 auto;
   margin-bottom: 4px;
+  font-size: 30px;
 }
 .cta {
   background-color: #ffe904;
@@ -39,6 +40,7 @@ export default {
   color: #1a1a18;
   flex: 0 1 auto;
   margin-left: 17px;
+  font-size: 18px;
   &:before {
     content: "> ";
   }

@@ -15,8 +15,31 @@
 
 body {
   font-family: Futura;
+  font-size: 15px;
+  line-height: 25px;
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: Poets;
   font-weight: bold;
+  text-decoration: none !important;
+}
+h2 {
+  font-size: 40px;
+  margin: 20px 0;
+}
+h3 {
+  font-size: 22px;
+  margin: 0;
+  line-height: 30px;
+}
+footer {
+  line-height: 30px;
+}
+a {
+  text-decoration: underline;
+  color: #000;
+  cursor: pointer;
+}
+a:hover, a:focus {
+  text-decoration: none;
 }

@@ -36,10 +36,11 @@ export default {
 }
 .left {
   flex: 1 1 50%;
-  padding: 80px;
+  padding: 50px 50px;
+  box-sizing: border-box;
 }
 .text {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 .right {
   flex: 1 1 50%;
