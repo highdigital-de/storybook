@@ -24,6 +24,8 @@ export default {
 <style lang="scss" scoped>
 .heading {
   text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
 }
 .subtitle {
   font-size: 22px;
