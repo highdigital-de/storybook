@@ -5,7 +5,9 @@ storiesOf('BackgroundBanner', module)
   .add('default', () => {
     return {
       components: { BackgroundBanner },
-      template: `<BackgroundBanner image="/img/cacao-bg.jpg">content</BackgroundBanner>`,
+      template: `<BackgroundBanner image="/img/green-bg.png">
+        <img src="/img/newsletter_form.png" />
+      </BackgroundBanner>`,
       data: () => ({ }),
     };
   });
