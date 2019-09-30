@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue';
 
 import Bar from './Bar';
 
-storiesOf('Design System|Molecules/Bar', module)
+storiesOf('Design System|Atoms/Bar', module)
   .add('default', () => {
     return {
       components: { Bar },
