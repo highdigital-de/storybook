@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import TileRow from './TileRow';
 
-storiesOf('TileRow', module)
+storiesOf('Design System|Molecules/TileRow', module)
 .add('two', () => {
   return {
     components: { TileRow },

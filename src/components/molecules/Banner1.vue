@@ -16,7 +16,7 @@
 </template>
 
 <script>
-import KoaButton from './KoaButton.vue'
+import KoaButton from './../atoms/KoaButton.vue'
 
 export default {
   name: "Banner1",

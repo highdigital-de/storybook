@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue';
 import Columns from './Columns';
 import Column from './Column';
 
-storiesOf('Columns', module)
+storiesOf('Design System|Molecules/Columns', module)
 .add('1 Column', () => {
   return {
     components: { Columns, Column },

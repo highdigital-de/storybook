@@ -3,7 +3,7 @@ import { withKnobs, text } from '@storybook/addon-knobs';
 
 import Tile from './Tile';
 
-storiesOf('Tile', module)
+storiesOf('Design System|Molecules/Tile', module)
   .addDecorator(withKnobs)
   .add('default', () => {
     return {

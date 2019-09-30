@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import KoaButton from './KoaButton.vue'
+import KoaButton from './../atoms/KoaButton.vue'
 import SfSection from '@storefront-ui/vue/src/components/molecules/SfSection/SfSection.vue'
 
 export default {

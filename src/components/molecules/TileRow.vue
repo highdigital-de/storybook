@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Tile from './Tile.vue'
+import Tile from './../molecules/Tile.vue'
 
 export default {
   name: "TileRow",

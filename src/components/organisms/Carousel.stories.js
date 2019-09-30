@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import Carousel from './Carousel';
 
-storiesOf('Carousel', module)
+storiesOf('Design System|Organisms/Carousel', module)
   .add('default', () => {
     return {
       components: { Carousel },

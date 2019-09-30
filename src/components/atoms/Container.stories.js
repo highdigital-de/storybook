@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import Container from './Container.vue';
 
-storiesOf('Container', module)
+storiesOf('Design System|Atoms/Container', module)
   .add('default', () => {
     return {
       components: { Container },

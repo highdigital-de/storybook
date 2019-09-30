@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Container from './Container.vue'
+import Container from './../atoms/Container.vue'
 
 export default {
   name: "BackgroundBanner",

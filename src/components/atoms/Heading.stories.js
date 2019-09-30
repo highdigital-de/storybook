@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue';
 
 import Heading from './Heading';
 
-storiesOf('Heading', module)
+storiesOf('Design System|Molecules/Heading', module)
   .add('default', () => {
     return {
       components: { Heading },

@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import OfferBanner from './OfferBanner';
 
-storiesOf('OfferBanner', module)
+storiesOf('Design System|Atoms/OfferBanner', module)
 .add('default', () => {
   return {
     components: { OfferBanner },

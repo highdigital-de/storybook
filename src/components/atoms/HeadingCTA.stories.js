@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import HeadingCTA from './HeadingCTA';
 
-storiesOf('HeadingCTA', module)
+storiesOf('Design System|Molecules/HeadingCTA', module)
   .add('default', () => {
     return {
       components: { HeadingCTA },

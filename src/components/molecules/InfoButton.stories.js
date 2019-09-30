@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import InfoButton from './InfoButton';
 
-storiesOf('InfoButton', module)
+storiesOf('Design System|Molecules/InfoButton', module)
   .add('default', () => {
     return {
       components: { InfoButton },

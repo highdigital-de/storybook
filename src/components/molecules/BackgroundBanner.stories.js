@@ -1,7 +1,7 @@
 import { storiesOf } from '@storybook/vue';
 import BackgroundBanner from './BackgroundBanner.vue';
 
-storiesOf('BackgroundBanner', module)
+storiesOf('Design System|Molecules/BackgroundBanner', module)
   .add('default', () => {
     return {
       components: { BackgroundBanner },

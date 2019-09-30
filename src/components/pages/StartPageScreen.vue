@@ -100,17 +100,17 @@
 </template>
 
 <script>
-import TopBar from './TopBar.vue';
-import OfferBanner from './OfferBanner.vue';
-import Hero1 from './Hero1.vue';
-import Banner1 from './Banner1.vue';
-import Container from './Container.vue';
-import TileRow from './TileRow.vue';
-import Heading from './Heading.vue';
-import Carousel from './Carousel.vue';
-import BackgroundBanner from './BackgroundBanner.vue';
-import Columns from './Columns.vue';
-import Column from './Column.vue';
+import TopBar from './../molecules/TopBar.vue';
+import OfferBanner from './../atoms/OfferBanner.vue';
+import Hero1 from './../molecules/Hero1.vue';
+import Banner1 from './../molecules/Banner1.vue';
+import Container from './../atoms/Container.vue';
+import TileRow from './../molecules/TileRow.vue';
+import Heading from './../atoms/Heading.vue';
+import Carousel from './../organisms/Carousel.vue';
+import BackgroundBanner from './../molecules/BackgroundBanner.vue';
+import Columns from './../molecules/Columns.vue';
+import Column from './../molecules/Column.vue';
 
 export default {
   name: "StartPageScreen",
