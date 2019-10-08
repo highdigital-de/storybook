@@ -1,10 +1,10 @@
 <template>
   <div class="infoButton">
-    <div class="info">
-      <h2>{{ title }}</h2>
-      <div class="text">{{ text }}</div>
+    <div class="info" v-if="visible">
+      <h2 v-if="title">{{ title }}</h2>
+      <div v-if="text" class="text">{{ text }}</div>
     </div>
-    <div class="button">
+    <div class="button" v-if="buttonText">
       <KoaButton >{{ buttonText }}</KoaButton>
     </div>
   </div>
@@ -27,6 +27,11 @@ export default {
     return {
     }
   },
+  computed: {
+    visible() {
+      return !!this.title || !!this.text || !!this.buttonText;
+    }
+  }
 }
 </script>
 
