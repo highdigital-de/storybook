@@ -22,6 +22,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../hdui.scss';
+
 .productTile {
   text-align: center;
   position: relative;
@@ -40,5 +42,17 @@ export default {
   background-color: #10cfc9;
   color: white;
   padding: 0 10px;
+}
+.batch {
+  display: none;
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+    display: block;
+  }
+}
+.batchMobile {
+  display: block;
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+    display: none;
+  }
 }
 </style>

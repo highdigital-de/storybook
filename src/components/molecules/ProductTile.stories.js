@@ -26,22 +26,8 @@ storiesOf('Design System|Molecules/ProductTile', module)
         title: 'koawach pur',
         subtitle: 'purer Kakaogenuss',
         price: 3.99,
-        batch: '100g Packung: -20%'
-      }
-    }),
-  };
-})
-.add('with batch mobile', () => {
-  return {
-    components: { ProductTile },
-    template: `<div style="width: 198px;"><ProductTile :product="product"></ProductTile></div>`,
-    data: () => ({
-      product: {
-        image: '/img/products/pur-mock-up-2@3x.png',
-        title: 'koawach pur',
-        subtitle: 'purer Kakaogenuss',
-        price: 3.99,
-        batchMobile: '  -20%'
+        batch: '100g Packung: -20%',
+        batchMobile: '-20%'
       }
     }),
   };
