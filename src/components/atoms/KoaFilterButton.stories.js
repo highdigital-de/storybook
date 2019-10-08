@@ -8,4 +8,11 @@ storiesOf('Design System|Atoms/KoaFilterButton', module)
       template: `<KoaFilterButton>ohne Koffein</KoaFilterButton>`,
       data: () => ({ }),
     };
+  })
+  .add('activ', () => {
+    return {
+      components: { KoaFilterButton },
+      template: `<KoaFilterButton activ>ohne Koffein</KoaFilterButton>`,
+      data: () => ({ }),
+    };
   });

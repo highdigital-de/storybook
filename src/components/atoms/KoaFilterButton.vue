@@ -1,6 +1,6 @@
 <template>
   <div class="koaFilterButton">
-    <div class="main">
+    <div class="button" :class="{activ: activ}">
       <slot></slot>
     </div>
   </div>
@@ -10,7 +10,8 @@
 export default {
   name: "KoaFilterButton",
   props: {
-    text: String
+    text: String,
+    activ: Boolean
   }
 }
 </script>
@@ -19,11 +20,11 @@ export default {
 .koaFilterButton {
   z-index: 1;
 }
-.main {
+.button {
   position: relative;
   background-color: transparent;
   color: #99572e;
-  border-color: #99572e;
+  border: solid 1px #99572e;
   font-size: 15px;
   width: 124px;
   height: 37px;
@@ -37,6 +38,14 @@ export default {
   &:hover, &:focus {
     background-color: #99572e;
     color: white;
+  }
+  &.activ {
+    background-color: #99572e;
+    color: white;
+    &:hover, &:focus {
+      background-color: white;
+      color: #99572e;
+    }
   }
 }
 
