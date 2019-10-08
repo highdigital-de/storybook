@@ -4,6 +4,8 @@
     <h3>{{ product.title }}</h3>
     <div>{{ product.subtitle }}</div>
     <h3 class="price">{{ product.price }}</h3>
+    <div class="batch" v-if="product.batch">{{ product.batch }}</div>
+    <div class="batchMobile" v-if="product.batchMobile">{{ product.batchMobile }}</div>
   </div>
 </template>
 
@@ -22,8 +24,21 @@ export default {
 <style lang="scss" scoped>
 .productTile {
   text-align: center;
+  position: relative;
+}
+.productImage {
+  width: 100%;
+  height: auto;
 }
 .price {
   margin-top: 25px;
+}
+.batch, .batchMobile {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #10cfc9;
+  color: white;
+  padding: 0 10px;
 }
 </style>
