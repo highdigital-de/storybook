@@ -1,11 +1,11 @@
 <template>
-  <div class="component">
+  <div class="placeholder">
   </div>
 </template>
 
 <script>
 export default {
-  name: "Component",
+  name: "Placeholder",
   props: {
 
   },
@@ -16,7 +16,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.component {
+.placeholder {
 
 }
 </style>
