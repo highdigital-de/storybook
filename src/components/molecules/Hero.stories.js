@@ -5,7 +5,7 @@ storiesOf('Design System|Molecules/Hero', module)
 .add('default with', () => {
   return {
     components: { Hero },
-    template: `<Hero :items="this.items" :title="this.title" :text="this.text" :buttonText="this.buttonText" />`,
+    template: `<Hero :items="this.items" />`,
     data: () => ({
       items: [
         {
@@ -35,7 +35,7 @@ storiesOf('Design System|Molecules/Hero', module)
 .add('no text', () => {
   return {
     components: { Hero },
-    template: `<Hero :items="this.items" :title="this.title" :text="this.text" :buttonText="this.buttonText" />`,
+    template: `<Hero :items="this.items" />`,
     data: () => ({
       items: [
         {
@@ -62,7 +62,7 @@ storiesOf('Design System|Molecules/Hero', module)
 .add('no text no image no border', () => {
   return {
     components: { Hero },
-    template: `<Hero noBorder :items="this.items" :title="this.title" :text="this.text" :buttonText="this.buttonText" />`,
+    template: `<Hero noBorder :items="this.items" />`,
     data: () => ({
       items: [
         {
