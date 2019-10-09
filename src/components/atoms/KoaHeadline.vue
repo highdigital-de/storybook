@@ -21,6 +21,5 @@ export default {
   line-height: 1.2;
   letter-spacing: 1px;
   text-align: left;
-  color: #000000;
 }
 </style>
