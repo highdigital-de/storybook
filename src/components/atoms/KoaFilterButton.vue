@@ -19,6 +19,8 @@ export default {
 <style lang="scss" scoped>
 .koaFilterButton {
   z-index: 1;
+  display: inline-block;
+  margin-right: 50px;
 }
 .button {
   position: relative;
