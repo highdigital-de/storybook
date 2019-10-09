@@ -21,16 +21,20 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-$margin: 10px;
+@import '../../../hdui.scss';
+
 .tileRow {
   display: flex;
   flex-flow: row wrap;
-  margin-left: -$margin;
-  margin-right: -$margin;
+  margin-left: -$tilerow-margin;
+  margin-right: -$tilerow-margin;
 }
 .tileContainer {
-  flex: 0 1 50%;
+  flex: 0 1 100%;
   box-sizing: border-box;
-  padding: $margin;
+  padding: $tilerow-margin;
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+    flex: 0 1 50%;
+  }
 }
 </style>
