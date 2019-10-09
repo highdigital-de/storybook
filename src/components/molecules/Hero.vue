@@ -1,6 +1,6 @@
 <template>
-  <div class="hero1Container" :class="{ border: !noBorder }">
-    <div class="hero1">
+  <div class="heroContainer" :class="{ border: !noBorder }">
+    <div class="hero">
       <SfHero :sliderOptions="{autoplay: false}">
         <template>
           <div v-for="(item, index) in items" :key="index">
@@ -29,7 +29,7 @@ import SfButton from '@storefront-ui/vue/src/components/atoms/SfButton/SfButton.
 import InfoButton from './../molecules/InfoButton.vue'
 
 export default {
-  name: "Hero1",
+  name: "Hero",
   components: {
     SfHero,
     SfButton,
@@ -50,12 +50,12 @@ export default {
 <style lang="scss" scoped>
 @import '../../../hdui.scss';
 
-.hero1Container {
+.heroContainer {
   &.border {
     filter: drop-shadow(0px 4px 0px #10cfc9);
   }
 }
-.hero1 {
+.hero {
   @include clip-border;
 }
 .margin {
