@@ -2,7 +2,7 @@
   <footer>
     <Container>
       <Columns>
-        <Column>
+        <Column smallHalf> 
           <h3>koffein kakao</h3>
           <a>Zutaten</a>
           <br />
@@ -13,7 +13,7 @@
           <a>Zubereitung</a>
           <br />
         </Column>
-        <Column>
+        <Column smallHalf> 
           <h3>shop</h3>
           <a>Schokodrinks</a>
           <br />
@@ -22,7 +22,7 @@
           <a>Zubehör</a>
           <br />
         </Column>
-        <Column>
+        <Column smallHalf> 
           <h3>koakult</h3>
           <a>Revolution</a>
           <br />
@@ -35,14 +35,14 @@
           <a>Karriere</a>
           <br />
         </Column>
-        <Column>
+        <Column smallHalf> 
           <h3>b2b</h3>
           <a>Presse</a>
           <br />
           <a>B2B</a>
           <br />
         </Column>
-        <Column>
+        <Column smallHalf> 
           <h3>hilfe und service</h3>
           <a>Versand</a>
           <br />
