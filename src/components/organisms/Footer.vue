@@ -99,6 +99,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.footer {
+@import '../../../hdui.scss';
+
+footer {
+  margin-top: $footer-top-margin;
 }
 </style>
