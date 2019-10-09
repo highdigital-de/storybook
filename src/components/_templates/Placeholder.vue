@@ -16,7 +16,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.placeholder {
+@import '../../../hdui.scss';
 
+.placeholder {
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+  
+  }
 }
 </style>
