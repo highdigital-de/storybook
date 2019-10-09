@@ -16,5 +16,6 @@ export default {
 .columns {
   width: 100%;
   display: flex;
+  flex-flow: row wrap;
 }
 </style>

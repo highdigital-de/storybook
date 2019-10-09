@@ -1,5 +1,5 @@
 <template>
-  <div class="column" :style="style">
+  <div class="column" :style="style" :class="{smallHalf: smallHalf}">
     <slot>
     </slot>
   </div>
@@ -13,7 +13,8 @@ export default {
     flex: {
       type: Number,
       default: 1,
-    }
+    },
+    smallHalf: Boolean
   },
   computed: {
     style() {
@@ -26,7 +27,18 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../hdui.scss';
+
 .column {
   padding-right: 10px;
+  box-sizing: border-box;
+  @media only screen and (max-width: $breakpoint-mobile-landscape) {
+    flex-basis: 100% !important;
+  }
+  &.smallHalf {
+    @media only screen and (max-width: $breakpoint-mobile-landscape) {
+      flex-basis: 50% !important;
+    }
+  }
 }
 </style>
