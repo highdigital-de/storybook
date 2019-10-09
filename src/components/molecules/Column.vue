@@ -30,10 +30,11 @@ export default {
 @import '../../../hdui.scss';
 
 .column {
-  padding-right: 10px;
+  padding: $column-margin;
   box-sizing: border-box;
   @media only screen and (max-width: $breakpoint-mobile-landscape) {
     flex-basis: 100% !important;
+    padding: 0;
   }
   &.smallHalf {
     @media only screen and (max-width: $breakpoint-mobile-landscape) {
