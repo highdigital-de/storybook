@@ -8,7 +8,7 @@
         </Column>
         <Column flex="2">
           <KoaHeadline>typ vanille</KoaHeadline>
-          <KoaTitle>verführerisch vanillig enthält koffeinhaltiges guarana super lecker</KoaTitle>
+          <h3>verführerisch vanillig enthält koffeinhaltiges guarana super lecker</h3>
           <KoaHeadline>3,59</KoaHeadline>
           <div>
             <Batch>-10%</Batch>statt 3,99€ pro 100g
