@@ -5,7 +5,7 @@
     <ProductBody v-bind="productBody" />
     <Whitespace />
     <Container>
-      <KoaHeadline center>andere leckere sorten für dich</KoaHeadline>
+      <KoaTitle center>andere leckere sorten für dich</KoaTitle>
       <ProductCarousel :products="featuredProducts" />
     </Container>
     <Footer />
