@@ -6,6 +6,20 @@ storiesOf('Design System|Atoms/KoaButton', module)
     return {
       components: { KoaButton },
       template: `<KoaButton>Hello World</KoaButton>`,
-      data: () => ({ }),
+      data: () => ({}),
+    };
+  })
+  .add('yellow', () => {
+    return {
+      components: { KoaButton },
+      template: `<KoaButton variant="yellow">Hello World</KoaButton>`,
+      data: () => ({}),
+    };
+  })
+  .add('brown', () => {
+    return {
+      components: { KoaButton },
+      template: `<KoaButton variant="brown">Hello World</KoaButton>`,
+      data: () => ({}),
     };
   });
