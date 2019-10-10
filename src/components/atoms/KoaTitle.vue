@@ -1,5 +1,5 @@
 <template>
-  <h3>
+  <h3 class="koaTitle" :class="{center: center}">
     <slot>
     </slot>
   </h3>
@@ -8,6 +8,9 @@
 <script>
 export default {
   name: "KoaTitle",
+  props: {
+    center: Boolean
+  }
 }
 </script>
 
@@ -21,5 +24,8 @@ export default {
   line-height: 1.12;
   letter-spacing: 0.75px;
   text-align: left;
+  &.center {
+    text-align: center;
+  }
 }
 </style>

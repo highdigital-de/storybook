@@ -3,6 +3,11 @@
     <TopBar :marginTop="50" />
     <ProductHero />
     <ProductBody v-bind="productBody" />
+    <Whitespace />
+    <Container>
+      <KoaHeadline center>andere leckere sorten für dich</KoaHeadline>
+      <ProductCarousel :products="featuredProducts" />
+    </Container>
     <Footer />
   </div>
 </template>
@@ -21,6 +26,7 @@ import TileRow from './../molecules/TileRow.vue';
 import ProductList from './../organisms/ProductList.vue';
 import Footer from './../organisms/Footer.vue';
 import ProductBody from './../organisms/ProductBody.vue';
+import ProductCarousel from './../organisms/ProductCarousel.vue';
 
 export default {
   name: "ProductPage",
@@ -40,7 +46,8 @@ export default {
     TileRow,
     Container,
     Footer,
-    ProductBody
+    ProductBody,
+    ProductCarousel
   },
   data() {
     return {
@@ -62,7 +69,45 @@ export default {
           protein: "14g",
           salt: "<0,03g"
         }
-      }
+      },
+      featuredProducts: [
+        {
+          title: "koawach pur",
+          subtitle: "purer Kakaogenuss",
+          price: 3.99,
+          image: "/img/products/pur-mock-up-2@3x.png"
+        },
+        {
+          title: "koawach klassik",
+          subtitle: "klassischer Kakaogenuss",
+          price: 3.99,
+          image: "/img/products/klassik-mock-up-3@3x.png"
+        },
+        {
+          title: "koawach pur",
+          subtitle: "purer Kakaogenuss",
+          price: 3.99,
+          image: "/img/products/pur-mock-up-2@3x.png"
+        },
+        {
+          title: "koawach klassik",
+          subtitle: "klassischer Kakaogenuss",
+          price: 3.99,
+          image: "/img/products/klassik-mock-up-3@3x.png"
+        },
+        {
+          title: "koawach pur",
+          subtitle: "purer Kakaogenuss",
+          price: 3.99,
+          image: "/img/products/pur-mock-up-2@3x.png"
+        },
+        {
+          title: "koawach klassik",
+          subtitle: "klassischer Kakaogenuss",
+          price: 3.99,
+          image: "/img/products/klassik-mock-up-3@3x.png"
+        }
+      ]
     }
   }
 }
