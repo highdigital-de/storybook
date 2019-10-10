@@ -18,7 +18,7 @@ export default {
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: 1.2;
+  line-height: 1.25;
   letter-spacing: 1px;
   text-align: left;
 }
