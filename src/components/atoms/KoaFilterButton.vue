@@ -17,10 +17,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../hdui.scss';
+
 .koaFilterButton {
   z-index: 1;
   display: inline-block;
-  margin-right: 50px;
+  margin-right: $koafilterbutton-margin-right;
+  margin-bottom: $koafilterbutton-margin-bottom;
 }
 .button {
   position: relative;
