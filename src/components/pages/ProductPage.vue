@@ -4,10 +4,12 @@
     <ProductHero />
     <ProductBody v-bind="productBody" />
     <Whitespace />
-    <Container>
-      <KoaTitle center>andere leckere sorten für dich</KoaTitle>
-      <ProductCarousel :products="featuredProducts" />
-    </Container>
+    <BackgroundBanner backgroundColor="#92c0e9">
+      <Container>
+        <KoaTitle center>andere leckere sorten für dich</KoaTitle>
+        <ProductCarousel :products="featuredProducts" />
+      </Container>
+    </BackgroundBanner>
     <Footer />
   </div>
 </template>
@@ -27,6 +29,7 @@ import ProductList from './../organisms/ProductList.vue';
 import Footer from './../organisms/Footer.vue';
 import ProductBody from './../organisms/ProductBody.vue';
 import ProductCarousel from './../organisms/ProductCarousel.vue';
+import BackgroundBanner from './../atoms/BackgroundBanner.vue';
 
 export default {
   name: "ProductPage",
@@ -47,7 +50,8 @@ export default {
     Container,
     Footer,
     ProductBody,
-    ProductCarousel
+    ProductCarousel,
+    BackgroundBanner
   },
   data() {
     return {
