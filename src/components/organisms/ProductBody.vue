@@ -3,12 +3,12 @@
     <Container>
       <Columns>
         <Column flex="2">
-          <KoaHeadline>{{ text.headline }}</KoaHeadline>
+          <KoaTitle>{{ text.headline }}</KoaTitle>
           <p>{{ text.body }}</p>
           <Whitespace />
           <img src="/img/placeholder_gray.png" width="474" height="267" class="translatedImage" />
           <Whitespace />
-          <KoaHeadline>zubereitung</KoaHeadline>
+          <KoaTitle>zubereitung</KoaTitle>
           <Columns>
             <Column smallHalf>
               <KoaTitle>1.</KoaTitle>
