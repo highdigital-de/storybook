@@ -39,6 +39,7 @@ export default {
 .batch {
   display: inline-block;
   padding: $batch-padding;
+  margin-right: $batch-margin-right;
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   
   }
