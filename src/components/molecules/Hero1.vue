@@ -68,12 +68,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../hdui.scss';
+
 .hero1Container {
   filter: drop-shadow(0px 4px 0px #10cfc9);
 }
 .hero1 {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
-  clip-path: polygon(0% 0%, 100% 0%, 100% 90%, 0 100%);
+  @include clip-border;
+  padding-bottom: 0;
   box-shadow: 0px 0px 0px 4px #10cfc9 inset;
 }
 .margin {
