@@ -57,6 +57,7 @@ export default {
 }
 .hero {
   @include clip-border;
+  padding-bottom: 0;
 }
 .margin {
   margin-top: 200px;
