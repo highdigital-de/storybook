@@ -1,7 +1,7 @@
 <template>
   <div class="productTile">
     <img :src="product.image" class="productImage" />
-    <h3>{{ product.title }}</h3>
+    <h3 class="title">{{ product.title }}</h3>
     <div>{{ product.subtitle }}</div>
     <h3 class="price">{{ product.price }}</h3>
     <div class="batch" v-if="product.batch">{{ product.batch }}</div>
@@ -27,6 +27,9 @@ export default {
 .productTile {
   text-align: center;
   position: relative;
+}
+.title {
+  margin-bottom: 0px;
 }
 .productImage {
   width: 100%;
