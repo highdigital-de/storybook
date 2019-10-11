@@ -4,6 +4,13 @@
     <ProductHero />
     <ProductBody v-bind="productBody" />
     <Whitespace />
+    <BackgroundBanner backgroundColor="#c5ddf3">
+      <Container>
+        <KoaTitle><Rating :score="5" />11 kundenbewertungen</KoaTitle>
+        <h3>neueste Bewertungen</h3>
+        <ReviewSection :reviews="reviews"></ReviewSection>
+      </Container>
+    </BackgroundBanner>
     <BackgroundBanner backgroundColor="#92c0e9">
       <Container>
         <KoaTitle center>andere leckere sorten für dich</KoaTitle>
@@ -15,6 +22,7 @@
 </template>
 
 <script>
+import Rating from './../atoms/Rating.vue';
 import Container from './../atoms/Container.vue';
 import KoaFilterButton from './../atoms/KoaFilterButton.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
@@ -30,6 +38,7 @@ import Footer from './../organisms/Footer.vue';
 import ProductBody from './../organisms/ProductBody.vue';
 import ProductCarousel from './../organisms/ProductCarousel.vue';
 import BackgroundBanner from './../atoms/BackgroundBanner.vue';
+import ReviewSection from './../organisms/ReviewSection.vue';
 
 export default {
   name: "ProductPage",
@@ -51,7 +60,9 @@ export default {
     Footer,
     ProductBody,
     ProductCarousel,
-    BackgroundBanner
+    BackgroundBanner,
+    Rating,
+    ReviewSection
   },
   data() {
     return {
@@ -111,7 +122,30 @@ export default {
           price: 3.99,
           image: "/img/products/klassik-mock-up-3@3x.png"
         }
-      ]
+      ],
+      reviews: [
+          {
+            title: 'ich liebe vanille',
+            text: 'Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann.',
+            name: 'Anna',
+            date: '16.08.2019',
+            score: 5,
+          },
+          {
+            title: 'noch mehr vanille',
+            text: 'Hallo. Ich bin ein kleiner Blindtext.',
+            name: 'Anna',
+            date: '15.08.2019',
+            score: 4,
+          },
+          {
+            title: 'mag kein vanille',
+            text: 'Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Und zwar schon so lange ich denken kann.',
+            name: 'Anna',
+            date: '12.01.2019',
+            score: 1,
+          }
+        ]
     }
   }
 }
