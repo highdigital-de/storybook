@@ -23,11 +23,32 @@ storiesOf('Design System|Atoms/BackgroundBanner', module)
           <div style="background: white; width: 100%; height: 400px;"></div>
         </Container>
       </BackgroundBanner>
-      <BackgroundBanner backgroundColor="white">
+      <BackgroundBanner backgroundColor="gray">
         <Container>
           <div style="background: black; width: 100%; height: 400px;"></div>
         </Container>
       </BackgroundBanner>
+      <BackgroundBanner backgroundColor="#92c0e9">
+        <Container>
+          <div style="background: white; width: 100%; height: 400px;"></div>
+        </Container>
+      </BackgroundBanner>
+      </div>`,
+    data: () => ({ }),
+  };
+})
+.add('combination with normal Background', () => {
+  return {
+    components: { BackgroundBanner, Container },
+    template: `<div>
+      <BackgroundBanner backgroundColor="#92c0e9">
+        <Container>
+          <div style="background: white; width: 100%; height: 400px;"></div>
+        </Container>
+      </BackgroundBanner>
+      <Container>
+        <div style="background: black; width: 100%; height: 400px;"></div>
+      </Container>
       <BackgroundBanner backgroundColor="#92c0e9">
         <Container>
           <div style="background: white; width: 100%; height: 400px;"></div>

@@ -36,6 +36,8 @@ export default {
   clip-path: polygon(0% calc(5vw), 100% 0%, 100% calc(100% - 5vw), 0 100%);
   padding-top: 5vw;
   padding-bottom: 5vw;
+  margin-top: -5vw;
+  margin-bottom: -5vw;
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   
   }
