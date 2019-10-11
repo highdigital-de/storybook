@@ -4,6 +4,8 @@
 </template>
 
 <script>
+import Placeholder from './../_templates/Placeholder.vue'
+
 export default {
   name: "Placeholder",
   props: {
