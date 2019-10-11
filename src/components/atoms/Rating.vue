@@ -31,6 +31,7 @@ export default {
 @import '../../../hdui.scss';
 
 .rating {
+  display: inline-block;
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   
   }
