@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import Placeholder from './../_templates/Placeholder.vue'
+import Container from './../atoms/Container.vue'
 
 export default {
   name: "Placeholder",
