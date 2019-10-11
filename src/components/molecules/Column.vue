@@ -1,5 +1,5 @@
 <template>
-  <div class="column" :style="style" :class="{smallHalf: smallHalf}">
+  <div class="column" :style="style" :class="{smallHalf: smallHalf, paddingRight: paddingRight}">
     <slot>
     </slot>
   </div>
@@ -14,7 +14,8 @@ export default {
       type: Number,
       default: 1,
     },
-    smallHalf: Boolean
+    smallHalf: Boolean,
+    paddingRight: Boolean
   },
   computed: {
     style() {
@@ -39,6 +40,12 @@ export default {
   &.smallHalf {
     @media only screen and (max-width: $breakpoint-mobile-landscape) {
       flex-basis: 50% !important;
+    }
+  }
+  &.paddingRight {
+    padding-right: $column-padding-right;
+    @media only screen and (max-width: $breakpoint-mobile-landscape) {
+      padding-right: inherit;
     }
   }
 }
