@@ -3,14 +3,14 @@
     <h3 class="title">{{ review.title }}</h3>
     <div class="text">{{ review.text }}</div>
     <div class="ratingRow">
-      XXXXXX
+      <Rating :score="review.score" />
       {{ review.name }} am {{ review.date }}
     </div>
   </div>
 </template>
 
 <script>
-import Tile from './../molecules/Tile.vue'
+import Rating from './../atoms/Rating.vue'
 
 export default {
   name: "Review",
@@ -21,7 +21,7 @@ export default {
     }
   },
   components: {
-
+    Rating
   }
 }
 </script>
