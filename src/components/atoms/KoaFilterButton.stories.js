@@ -19,4 +19,18 @@ storiesOf('Design System|Atoms/KoaFilterButton', module)
       template: `<KoaFilterButton activ>ohne Koffein</KoaFilterButton>`,
       data: () => ({ }),
     };
+  })
+  .add('default color', () => {
+    return {
+      components: { KoaFilterButton },
+      template: `<div style="background-color: #93c0e9;"><KoaFilterButton color="white" backgroundColor="#93c0e9">ohne Koffein</KoaFilterButton></div>`,
+      data: () => ({ }),
+    };
+  })
+  .add('default color activ', () => {
+    return {
+      components: { KoaFilterButton },
+      template: `<div style="background-color: #93c0e9;"><KoaFilterButton color="white" backgroundColor="#93c0e9" activ>ohne Koffein</KoaFilterButton></div>`,
+      data: () => ({ }),
+    };
   });

@@ -1,6 +1,6 @@
 <template>
   <div class="koaFilterButton">
-    <div class="button" :class="{activ: activ}" @click="$emit('click')">
+    <div class="button" :style="style" :class="{activ: activ, white: white}" @click="$emit('click')">
       <slot></slot>
     </div>
   </div>
@@ -11,13 +11,30 @@ export default {
   name: "KoaFilterButton",
   props: {
     text: String,
+    color: {
+      type: String,
+      default: 'white'
+    },
+    backgroundColor: {
+      type: String,
+      default: '#99572e'
+    },
     activ: Boolean
+  },
+  computed: {
+    style() {
+      return {
+        color: this.activ ? this.backgroundColor : this.color,
+        borderColor: this.activ ? this.backgroundColor : this.color,
+        backgroundColor: this.activ ? this.color : this.backgroundColor
+      }
+    }
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../hdui.scss';
+@import "../../../hdui.scss";
 
 .koaFilterButton {
   z-index: 1;
@@ -40,18 +57,19 @@ export default {
   transition: all 0.3s;
   font-family: Futura;
   font-weight: 300;
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     background-color: #99572e;
     color: white;
   }
   &.activ {
     background-color: #99572e;
     color: white;
-    &:hover, &:focus {
+    &:hover,
+    &:focus {
       background-color: white;
       color: #99572e;
     }
   }
 }
-
 </style>
