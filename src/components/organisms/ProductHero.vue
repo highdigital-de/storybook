@@ -2,11 +2,11 @@
   <div class="productHero" :style="heroStyle">
     <Container>
       <Whitespace />
-      <Columns>
-        <Column flex="2">
+      <div class="columns">
+        <div class="column is-6">
           <img src="/img/screens/product/vanilla.png" class="image" />
-        </Column>
-        <Column flex="2">
+        </div>
+        <div class="column is-5">
           <KoaHeadline>typ vanille</KoaHeadline>
           <h3>verführerisch vanillig enthält koffeinhaltiges guarana super lecker</h3>
           <KoaHeadline>3,59</KoaHeadline>
@@ -17,19 +17,18 @@
             inkl. 7 % MwSt. zzgl. Versand<br />
             Lieferzeit: ca. 1-3 Tage nach DE
           </p>
+          <Whitespace />
           <KoaButton :variant="colors.koaButton" >in den Warencorb</KoaButton>
-        </Column>
-        <Column flex="1">
+        </div>
+        <div class="is-1">
           <img src="/img/screens/product/logos.png" width="80" class="logos" />
-        </Column>
-      </Columns>
+        </div>
+      </div>
     </Container>
   </div>
 </template>
 
 <script>
-import Columns from './../molecules/Columns.vue';
-import Column from './../molecules/Column.vue';
 import Container from './../atoms/Container.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
@@ -50,8 +49,6 @@ export default {
     },
   },
   components: {
-    Columns,
-    Column,
     Container,
     Whitespace,
     KoaTitle,
