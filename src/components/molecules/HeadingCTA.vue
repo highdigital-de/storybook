@@ -41,6 +41,7 @@ export default {
 .heading {
   font-size: 30px;
   line-height: 43px;
+  font-family: Poets;
   background: repeating-linear-gradient(transparent, transparent 0px, $white 0px, $white 43px, transparent 43px, transparent 45px)
 }
 .cta {

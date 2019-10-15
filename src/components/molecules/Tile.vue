@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import HeadingCTA from './../atoms/HeadingCTA.vue'
+import HeadingCTA from './../molecules/HeadingCTA.vue'
 
 export default {
   name: "Tile",
