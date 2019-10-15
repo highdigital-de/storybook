@@ -1,6 +1,6 @@
 <template>
   <div class="koaFilterButton">
-    <div class="button" :class="{activ: activ}">
+    <div class="button" :class="{activ: activ}" @click="$emit('click')">
       <slot></slot>
     </div>
   </div>
