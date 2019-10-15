@@ -13,10 +13,10 @@ storiesOf('Design System|Atoms/KoaFilterButton', module)
       }
     };
   })
-  .add('activ', () => {
+  .add('active', () => {
     return {
       components: { KoaFilterButton },
-      template: `<KoaFilterButton activ>ohne Koffein</KoaFilterButton>`,
+      template: `<KoaFilterButton active>ohne Koffein</KoaFilterButton>`,
       data: () => ({ }),
     };
   })
@@ -27,10 +27,10 @@ storiesOf('Design System|Atoms/KoaFilterButton', module)
       data: () => ({ }),
     };
   })
-  .add('default color activ', () => {
+  .add('default color active', () => {
     return {
       components: { KoaFilterButton },
-      template: `<div style="background-color: #93c0e9;"><KoaFilterButton color="white" backgroundColor="#93c0e9" activ>ohne Koffein</KoaFilterButton></div>`,
+      template: `<div style="background-color: #93c0e9;"><KoaFilterButton color="white" backgroundColor="#93c0e9" active>ohne Koffein</KoaFilterButton></div>`,
       data: () => ({ }),
     };
   });

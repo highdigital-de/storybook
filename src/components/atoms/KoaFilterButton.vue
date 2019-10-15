@@ -1,6 +1,6 @@
 <template>
   <div class="koaFilterButton">
-    <div class="button" :style="style" :class="{activ: activ, white: white}" @click="$emit('click')">
+    <div class="button" :style="style" :class="{active: active, white: white}" @click="$emit('click')">
       <slot></slot>
     </div>
   </div>
@@ -19,14 +19,14 @@ export default {
       type: String,
       default: '#99572e'
     },
-    activ: Boolean
+    active: Boolean
   },
   computed: {
     style() {
       return {
-        color: this.activ ? this.backgroundColor : this.color,
-        borderColor: this.activ ? this.backgroundColor : this.color,
-        backgroundColor: this.activ ? this.color : this.backgroundColor
+        color: this.active ? this.backgroundColor : this.color,
+        borderColor: this.active ? this.backgroundColor : this.color,
+        backgroundColor: this.active ? this.color : this.backgroundColor
       }
     }
   }
@@ -62,7 +62,7 @@ export default {
     background-color: #99572e;
     color: white;
   }
-  &.activ {
+  &.active {
     background-color: #99572e;
     color: white;
     &:hover,
