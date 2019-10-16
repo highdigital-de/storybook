@@ -8,7 +8,7 @@ storiesOf('Design System|Molecules/ProductTile', module)
     template: `<div style="width: 303px;"><ProductTile :product="product"></ProductTile></div>`,
     data: () => ({
       product: {
-        image: '/img/products/pur-mock-up-2@3x.png',
+        image: '/img/products/pur-produktbild@3x.png',
         title: 'koawach pur',
         subtitle: 'purer Kakaogenuss',
         price: 3.99
@@ -22,7 +22,7 @@ storiesOf('Design System|Molecules/ProductTile', module)
     template: `<div style="width: 303px;"><ProductTile :product="product"></ProductTile></div>`,
     data: () => ({
       product: {
-        image: '/img/products/pur-mock-up-2@3x.png',
+        image: '/img/products/pur-produktbild@3x.png',
         title: 'koawach pur',
         subtitle: 'purer Kakaogenuss',
         price: 3.99,

@@ -90,37 +90,37 @@ export default {
           title: "koawach pur",
           subtitle: "purer Kakaogenuss",
           price: 3.99,
-          image: "/img/products/pur-mock-up-2@3x.png"
+          image: "/img/products/pur-produktbild@3x.png"
         },
         {
           title: "koawach klassik",
           subtitle: "klassischer Kakaogenuss",
           price: 3.99,
-          image: "/img/products/klassik-mock-up-3@3x.png"
+          image: "/img/products/klassik-produktbild@3x.png"
         },
         {
           title: "koawach pur",
           subtitle: "purer Kakaogenuss",
           price: 3.99,
-          image: "/img/products/pur-mock-up-2@3x.png"
+          image: "/img/products/pur-produktbild@3x.png"
         },
         {
           title: "koawach klassik",
           subtitle: "klassischer Kakaogenuss",
           price: 3.99,
-          image: "/img/products/klassik-mock-up-3@3x.png"
+          image: "/img/products/klassik-produktbild@3x.png"
         },
         {
           title: "koawach pur",
           subtitle: "purer Kakaogenuss",
           price: 3.99,
-          image: "/img/products/pur-mock-up-2@3x.png"
+          image: "/img/products/pur-produktbild@3x.png"
         },
         {
           title: "koawach klassik",
           subtitle: "klassischer Kakaogenuss",
           price: 3.99,
-          image: "/img/products/klassik-mock-up-3@3x.png"
+          image: "/img/products/klassik-produktbild@3x.png"
         }
       ],
       reviews: [

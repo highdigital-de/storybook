@@ -2,7 +2,7 @@ import { storiesOf } from '@storybook/vue';
 import ProductList from './ProductList';
 
 const product1 = {
-  image: '/img/products/pur-mock-up-2@3x.png',
+  image: '/img/products/pur-produktbild@3x.png',
   title: 'koawach pur',
   subtitle: 'purer Kakaogenuss',
   price: 3.99
@@ -13,7 +13,7 @@ const product1Batch = {
   batchMobile: '-20%'
 }
 const product2 = {
-  image: '/img/products/klassik-mock-up-3@3x.png',
+  image: '/img/products/klassik-produktbild@3x.png',
   title: 'koawach Klassik',
   subtitle: 'klassisch schokoladig',
   price: 3.99
