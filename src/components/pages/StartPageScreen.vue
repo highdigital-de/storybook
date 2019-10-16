@@ -24,7 +24,7 @@
     <Container>
       <Carousel :items="carouselItems2" :settings="carouselSettings2" />
     </Container>
-    <BackgroundBanner backgroundImage="/img/products/wellenlinie.svg">
+    <BackgroundBanner backgroundImage="/img/products/wellenlinie.svg" straightBottom>
       <Container>
         <Heading
           title="die kakaorevolution auf instagram"
@@ -33,7 +33,7 @@
         <Carousel :items="carouselItems3" :settings="carouselSettings3" />
       </Container>
     </BackgroundBanner>
-    <BackgroundBanner backgroundImage="/img/green-bg.png">
+    <BackgroundBanner backgroundImage="/img/green-bg.png" straight>
       <Container>
         <img src="/img/newsletter_form.png" />
       </Container>
