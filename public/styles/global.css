@@ -43,3 +43,113 @@ a {
 a:hover, a:focus {
   text-decoration: none;
 }
+
+/* From Zeplin */
+
+.Headline-hausschrift-40-pt {
+  font-family: hausschrift;
+  font-size: 40px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #000000;
+}
+
+.hausschrift-32pt {
+  font-family: hausschrift;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-align: left;
+  color: #000000;
+}
+
+.Text-Style {
+  font-family: hausschrift;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.12;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #000000;
+}
+
+.hausschrift-22pt {
+  font-family: hausschrift;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Subtitle-hausschrift-22-pt {
+  font-family: hausschrift;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.14;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #000000;
+}
+
+.Button-hausschrift-22-pt {
+  font-family: hausschrift;
+  font-size: 22px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.75px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Button-Futura-Std-18-pt {
+  font-family: FuturaStd;
+  font-size: 18px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.2;
+  letter-spacing: 0.45px;
+  text-align: left;
+  color: #1a1a18;
+}
+
+.Men-hausschrift-18-pt {
+  font-family: hausschrift;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.45px;
+  text-align: left;
+  color: #ffffff;
+}
+
+.Body-Futura-Std-15-pt {
+  font-family: FuturaStd;
+  font-size: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
