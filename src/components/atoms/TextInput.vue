@@ -1,7 +1,12 @@
 <template>
   <div class="textInput">
     <div class="label .hausschrift-22pt" v-if="label">{{label}}</div>
-    <input type="text" class="inputField" />
+    <input
+      type="text"
+      class="inputField"
+      v-bind:value="value"
+      v-on:input="$emit('input', $event.target.value)"
+    />
   </div>
 </template>
 
@@ -11,7 +16,8 @@ import Container from './../atoms/Container.vue'
 export default {
   name: "TextInput",
   props: {
-    label: String
+    label: String,
+    value: String
   },
   components: {
 
@@ -20,11 +26,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../hdui.scss';
+@import "../../../hdui.scss";
 
 .textInput {
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
-  
   }
 }
 .inputField {
