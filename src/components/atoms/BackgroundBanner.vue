@@ -12,7 +12,8 @@ export default {
     backgroundColor: {
       type: String,
       default: 'white'
-    }
+    },
+    backgroundImage: String
   },
   components: {
 
@@ -20,7 +21,8 @@ export default {
   computed: {
     style() {
       return {
-        backgroundColor: this.backgroundColor
+        backgroundColor: this.backgroundColor,
+        backgroundImage: 'URL(' + this.backgroundImage + ')'
       }
     }
   }
@@ -38,6 +40,7 @@ export default {
   padding-bottom: 5vw;
   margin-top: -5vw;
   margin-bottom: -5vw;
+  background-size: cover;
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   
   }
