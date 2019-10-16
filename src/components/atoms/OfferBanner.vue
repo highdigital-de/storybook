@@ -38,6 +38,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '../../../hdui.scss';
+
 .offerBanner {
   width: 100%;
   min-height: 50px;
@@ -45,6 +47,9 @@ export default {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: $offerbanner-padding;
+  padding-right: $offerbanner-padding-right;
+  box-sizing: border-box;
 }
 .text {
   flex: 1;
@@ -60,8 +65,7 @@ export default {
   font-size: 16px;
   transition: all 0.3s;
   &:hover {
-    font-size: 22px;
-    transform: rotate(90deg);
+    font-size: 18px;
   }
 }
 </style>
