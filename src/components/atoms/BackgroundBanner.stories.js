@@ -37,11 +37,11 @@ storiesOf('Design System|Atoms/BackgroundBanner', module)
     data: () => ({ }),
   };
 })
-.add('combination with normal Background', () => {
+.add('combination with no Background', () => {
   return {
     components: { BackgroundBanner, Container },
     template: `<div>
-      <BackgroundBanner backgroundColor="#92c0e9">
+      <BackgroundBanner backgroundColor="#92c0e9" straightBottom>
         <Container>
           <div style="background: white; width: 100%; height: 400px;"></div>
         </Container>
@@ -49,7 +49,30 @@ storiesOf('Design System|Atoms/BackgroundBanner', module)
       <Container>
         <div style="background: black; width: 100%; height: 400px;"></div>
       </Container>
-      <BackgroundBanner backgroundColor="#92c0e9">
+      <BackgroundBanner backgroundColor="#92c0e9" straightTop>
+        <Container>
+          <div style="background: white; width: 100%; height: 400px;"></div>
+        </Container>
+      </BackgroundBanner>
+      </div>`,
+    data: () => ({ }),
+  };
+})
+.add('combination with straight', () => {
+  return {
+    components: { BackgroundBanner, Container },
+    template: `<div>
+      <BackgroundBanner backgroundColor="#92c0e9" straightBottom>
+        <Container>
+          <div style="background: white; width: 100%; height: 400px;"></div>
+        </Container>
+      </BackgroundBanner>
+      <BackgroundBanner backgroundColor="#ffffff" straight>
+        <Container>
+          <div style="background: black; width: 100%; height: 400px;"></div>
+        </Container>
+      </BackgroundBanner>
+      <BackgroundBanner backgroundColor="#92c0e9" straightTop>
         <Container>
           <div style="background: white; width: 100%; height: 400px;"></div>
         </Container>
