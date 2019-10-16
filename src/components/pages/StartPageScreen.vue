@@ -24,17 +24,19 @@
     <Container>
       <Carousel :items="carouselItems2" :settings="carouselSettings2" />
     </Container>
-    <Container>
-      <Heading
-        title="die kakaorevolution auf instagram"
-        subtitle="poste #… mit etwas glück featuren wir dich auf unserer seite!"
-      />
-    </Container>
-    <BackgroundBanner>
-      <Carousel :items="carouselItems3" :settings="carouselSettings3" />
+    <BackgroundBanner backgroundImage="/img/products/wellenlinie.svg">
+      <Container>
+        <Heading
+          title="die kakaorevolution auf instagram"
+          subtitle="poste #… mit etwas glück featuren wir dich auf unserer seite!"
+        />
+        <Carousel :items="carouselItems3" :settings="carouselSettings3" />
+      </Container>
     </BackgroundBanner>
-    <BackgroundBanner image="/img/green-bg.png">
-      <img src="/img/newsletter_form.png" />
+    <BackgroundBanner backgroundImage="/img/green-bg.png">
+      <Container>
+        <img src="/img/newsletter_form.png" />
+      </Container>
     </BackgroundBanner>
     <Footer />
   </div>
@@ -49,7 +51,7 @@ import Container from './../atoms/Container.vue';
 import TileRow from './../molecules/TileRow.vue';
 import Heading from './../atoms/Heading.vue';
 import Carousel from './../organisms/Carousel.vue';
-import BackgroundBanner from './../molecules/BackgroundBanner.vue';
+import BackgroundBanner from './../atoms/BackgroundBanner.vue';
 import Columns from './../molecules/Columns.vue';
 import Column from './../molecules/Column.vue';
 import Footer from './../organisms/Footer.vue';
