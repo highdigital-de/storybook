@@ -1,7 +1,7 @@
 <template>
-  <div class="textInput">
+  <div class="textareaInput">
     <div class="label .hausschrift-22pt" v-if="label">{{label}}</div>
-    <input
+    <textarea
       type="text"
       class="inputField"
       v-bind:value="value"
@@ -14,7 +14,7 @@
 import Container from './../atoms/Container.vue'
 
 export default {
-  name: "TextInput",
+  name: "TextareaInput",
   props: {
     label: String,
     value: String
@@ -28,14 +28,15 @@ export default {
 <style lang="scss" scoped>
 @import "../../../hdui.scss";
 
-.textInput {
+.textareaInput {
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   }
 }
 .inputField {
-  height: $textinput-height;
-  padding: $textinput-padding;
-  font-size: $textinput-font-size;
+  height: $textareainput-height;
+  padding: $textareainput-padding;
+  font-size: $textareainput-font-size;
+  line-height: $textareainput-line-height;
   box-sizing: border-box;
   width: 100%;
   border: none;
