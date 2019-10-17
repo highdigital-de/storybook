@@ -21,6 +21,33 @@ storiesOf('Design System|Molecules/IconButton', module)
     data: () => ({ }),
   };
 })
+.add('with batch 1', () => {
+  return {
+    components: { IconButton },
+    template: `<div style="background-color: gray;">
+    <IconButton icon="person" batch="1" />
+    </div>`,
+    data: () => ({ }),
+  };
+})
+.add('with batch 22', () => {
+  return {
+    components: { IconButton },
+    template: `<div style="background-color: gray;">
+    <IconButton icon="person" batch="22" />
+    </div>`,
+    data: () => ({ }),
+  };
+})
+.add('with batch 4444', () => {
+  return {
+    components: { IconButton },
+    template: `<div style="background-color: gray;">
+    <IconButton icon="person" batch="4444" />
+    </div>`,
+    data: () => ({ }),
+  };
+})
 .add('on click event', () => {
   return {
     components: { IconButton },

@@ -16,14 +16,15 @@
 
     </div>
     <div class="right">
-      <a class="link">
-        koakult
-      </a>
+      <IconButton icon="person" />
+      <IconButton icon="cart" />
+      <IconButton icon="hamburger" />
     </div>
   </div>
 </template>
 
 <script>
+import IconButton from './../molecules/IconButton.vue'
 
 export default {
   name: "TopBar",
@@ -43,13 +44,18 @@ export default {
         top: this.marginTop
       }
     }
+  },
+  components: {
+    IconButton
   }
 }
 </script>
 
 <style lang="scss" scoped>
+@import '../../../hdui.scss';
+
 .topBar {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;
   height: 102px;
@@ -65,7 +71,7 @@ export default {
   flex: 1 0 auto;
 }
 .right {
-  padding-top: 45px;
+  padding-top: 33px;
   flex: 0 1 auto
 }
 .link {

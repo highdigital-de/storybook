@@ -1,5 +1,8 @@
 <template>
   <div class="iconButton" @click="$emit('click')">
+    <div v-if="batch" class="batch">
+      {{ batch }}
+    </div>
     <Icon :icon="icon" />
   </div>
 </template>
@@ -11,7 +14,7 @@ export default {
   name: "IconButton",
   props: {
     icon: String,
-
+    batch: String
   },
   components: {
     Icon
@@ -24,6 +27,7 @@ export default {
 
 .iconButton {
   display: inline-block;
+  position: relative;
   width: $iconButton-width;
   height: $iconButton-height;
   padding: $iconButton-padding;
@@ -32,5 +36,18 @@ export default {
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   
   }
+}
+.batch {
+  position: absolute;
+  top: -5px;
+  left: ($iconButton-width - 16);
+  padding: $iconButton-batch-padding;
+  text-align: center;
+  height: $iconButton-batch-height;
+  min-width: $iconButton-batch-height;
+  border-radius: $iconButton-batch-border-radius;
+  background-color: $iconButton-batch-background-color;
+  color: $iconButton-batch-color;
+  font-family: Poets;
 }
 </style>
