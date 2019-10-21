@@ -48,7 +48,7 @@ a:hover, a:focus {
 /* From Zeplin */
 
 .Headline-hausschrift-40-pt {
-  font-family: hausschrift;
+  font-family: Poets;
   font-size: 40px;
   font-weight: normal;
   font-stretch: normal;
@@ -59,7 +59,7 @@ a:hover, a:focus {
 }
 
 .hausschrift-32pt {
-  font-family: hausschrift;
+  font-family: Poets;
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -70,7 +70,7 @@ a:hover, a:focus {
 }
 
 .Text-Style {
-  font-family: hausschrift;
+  font-family: Poets;
   font-size: 30px;
   font-weight: normal;
   font-stretch: normal;
@@ -81,29 +81,29 @@ a:hover, a:focus {
 }
 
 .hausschrift-22pt {
-  font-family: hausschrift;
+  font-family: Poets;
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.14;
+  line-height: 1.67;
   letter-spacing: 0.75px;
   text-align: left;
 }
 
 .Subtitle-hausschrift-22-pt {
-  font-family: hausschrift;
+  font-family: Poets;
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
-  line-height: 1.14;
+  line-height: 1.67;
   letter-spacing: 0.75px;
   text-align: left;
 }
 
 .Button-hausschrift-22-pt {
-  font-family: hausschrift;
+  font-family: Poets;
   font-size: 22px;
   font-weight: normal;
   font-stretch: normal;
@@ -125,7 +125,7 @@ a:hover, a:focus {
 }
 
 .Men-hausschrift-18-pt {
-  font-family: hausschrift;
+  font-family: Poets;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
