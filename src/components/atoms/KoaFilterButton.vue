@@ -48,7 +48,7 @@ export default {
   color: #99572e;
   border: solid 1px #99572e;
   font-size: 15px;
-  width: 124px;
+  min-width: 124px;
   height: 37px;
   text-align: center;
   padding: 6px 15px;
