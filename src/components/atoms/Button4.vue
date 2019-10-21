@@ -21,8 +21,7 @@ export default {
 .button4 {
   z-index: 1;
   display: inline-block;
-  margin-right: $button4-margin-right;
-  margin-bottom: $button4-margin-bottom;
+  margin: $button4-margin;
 }
 .button {
   position: relative;
