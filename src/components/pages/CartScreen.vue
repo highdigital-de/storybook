@@ -83,7 +83,7 @@
               </div>
               <div v-if="isSubscription">
                 <div class="hausschrift-22pt">lieferzyklus</div>
-                <dropdownInput :options="deliveryOptions" />
+                <dropdownInput :options="deliveryOptions" placeholder="bitte wählen" variant="yellow" />
               </div>
             </div>
           </div>

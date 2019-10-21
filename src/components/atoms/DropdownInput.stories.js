@@ -27,6 +27,29 @@ storiesOf('Design System|Atoms/DropdownInput', module)
     }),
   };
 })
+.add('with label in columns variant yellow', () => {
+  return {
+    components: { DropdownInput, Container },
+    template: `
+    <div style="background-color: #c5ddf3;">
+      <Container>
+        <div class="columns">
+          <div class="column">
+            <DropdownInput label="Geschlecht" placeholder="bitte wählen" :options="this.options" variant="yellow" />
+          </div>
+          <div class="column">
+          </div>s
+        </div>
+      </Container>
+    </div>`,
+    data: () => ({
+      options: [
+        {label: 'Herr', value: 'male'},
+        {label: 'Frau', value: 'female'}
+      ]
+    }),
+  };
+})
 .add('v-model', () => {
   return {
     components: { DropdownInput, Container },

@@ -4,6 +4,7 @@
     <select
       size="1"
       class="selectField"
+      :class="variant"
       :value="value" @input="$emit('input', $event.target.value)"
     >
       <option disabled hidden value="">{{ placeholder }}</option>
@@ -25,7 +26,8 @@ export default {
     label: String,
     value: String,
     options: Array,
-    placeholder: String
+    placeholder: String,
+    variant: String
   },
   data() {
     return {
@@ -61,6 +63,9 @@ export default {
   background-image: url('/img/icons/ui/arrow_down.svg');
   background-repeat: no-repeat;
   background-position: right 10px center;
+  &.yellow {
+    background-color: $yellow;
+  }
 }
 .selectField::-ms-expand {
   display: none;
