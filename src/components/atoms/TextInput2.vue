@@ -41,6 +41,7 @@ export default {
   font-family: $textinput2-font-family;
   caret-color: $textinput2-caret-color;
   background-color: $textinput2-background-color;
+  margin-bottom: $textinput2-margin-bottom;
   box-sizing: border-box;
   width: 100%;
   border: none;
