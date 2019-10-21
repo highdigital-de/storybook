@@ -66,6 +66,7 @@ export default {
 
 .topBar {
   position: fixed;
+  top: 0;
   left: 0;
   right: 0;
   height: 102px;
@@ -98,6 +99,7 @@ export default {
   padding: 5px 15px;
 }
 .logoContainer {
+  margin-left: -30px;
   background-color: white;
   padding-top: 20px;
   padding-left: 70px;
