@@ -18,6 +18,7 @@ export default {
       icons: {
         'person': 'person.svg',
         'cart': 'cart.svg',
+        'checked': 'checked.svg',
         'hamburger': 'hamburger.svg',
         'arrow_down': 'arrow_down.svg',
         'arrow_left': 'arrow_left.svg',
