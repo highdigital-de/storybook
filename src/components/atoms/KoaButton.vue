@@ -21,10 +21,13 @@ export default {
 
 .koaButton {
   z-index: 1;
+  position: relative;
+  display: inline-block;
 }
 .main {
   position: relative;
   background-color: $turquoise;
+  transform-style: preserve-3d;
   color: $white;
   font-size: 22px;
   width: 250px;
@@ -35,6 +38,8 @@ export default {
   cursor: pointer;
   transition: all 0.3s;
   font-family: Poets;
+  transform: translate3d(0px, 0px, 0px);
+  z-index: 1;
   &:after {
     content: '';
     position: absolute;
@@ -43,7 +48,7 @@ export default {
     right: 0;
     bottom: 0;
     background-color: $yellow;
-    transform: translate3d(5px, 4px, 0);
+    transform: translate3d(4px, 4px, -1px);
     transition: all 0.3s;
     z-index: -1 ;
   }
@@ -52,6 +57,12 @@ export default {
     background-color: $yellow;
     &:after {
       background-color: $turquoise;
+    }
+  }
+  &:active {
+    transform: translate3d(4px, 4px, 0);
+    &:after {
+      transform: translate3d(0px, 0px, -1px);
     }
   }
   &.yellow {
