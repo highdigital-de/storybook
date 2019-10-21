@@ -72,13 +72,18 @@
         <div class="column is-6 mobileMarginBottom">
           <div class="columns is-mobile">
             <div class="column is-narrow ">
-              <div style="background-color: gray; width: 34px; height: 34px;"></div>
+              <Icon icon="checked" dark v-if="isSubscription" />
+              <div v-else style="background-color: gray; width: 34px; height: 34px;"></div>
             </div>
             <div class="column">
               <div class="hausschrift-22pt">lieferung als abo bestellen</div>
-              <div>
+              <div v-if="!isSubscription">
                 - jederzeit anpassbar<br>
                 - jederzeit kündbar
+              </div>
+              <div v-if="isSubscription">
+                <div class="hausschrift-22pt">lieferzyklus</div>
+                <dropdownInput :options="deliveryOptions" />
               </div>
             </div>
           </div>
@@ -102,6 +107,7 @@ import Button4 from './../atoms/Button4.vue';
 import KoaButton from './../atoms/KoaButton.vue';
 import Button3 from './../atoms/Button3.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
+import DropdownInput from './../atoms/DropdownInput.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Icon from './../atoms/Icon.vue';
@@ -136,7 +142,7 @@ const product2 = {
 export default {
   name: "CartScreen",
   props: {
-
+    isSubscription: Boolean
   },
   components: {
     Columns,
@@ -155,7 +161,8 @@ export default {
     Icon,
     AmmountSelector,
     TextInput,
-    Button3
+    Button3,
+    DropdownInput
   },
   data() {
     return {
@@ -165,7 +172,11 @@ export default {
           product1,
           product2,
         ],
-      }
+      },
+      deliveryOptions: [
+        {label: 'Monatlich', value: 'monthly'},
+        {label: 'Wöchentlich', value: 'weekly'}
+      ]
     }
   }
 }
