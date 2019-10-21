@@ -75,7 +75,7 @@ export default {
       background-color: $yellow;
     }
     &:hover, &:focus {
-      color: $white;
+      color: $black;
       background-color: $yellow;
       &:after {
         background-color: $brown;
