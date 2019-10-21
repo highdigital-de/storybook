@@ -21,9 +21,10 @@ export default {
 
 .button3 {
   z-index: 1;
+  display: inline-block;
+  margin: 2.5px;
 }
 .main {
-  display: inline-block;
   position: relative;
   background-color: $turquoise;
   color: $white;
