@@ -59,18 +59,18 @@
     </Container>
     <Container>
       <Columns>
-        <Column flex="3">
+        <Column :flex="3">
           <h3>zahlungsmethoden</h3>
           <img src="/img/payment.png" />
         </Column>
-        <Column flex="2">
+        <Column :flex="2">
           <h3>wir versenden mit</h3>
           <img src="/img/delivery.png" />
         </Column>
       </Columns>
       <Columns>
-        <Column flex="3"></Column>
-        <Column flex="2">
+        <Column :flex="3"></Column>
+        <Column :flex="2">
           <h3>werde teil der kakao-revolution!</h3>
           <img src="/img/social.png" />
         </Column>
