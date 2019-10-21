@@ -54,6 +54,9 @@ a:hover, a:focus {
 .center {
   text-align: center;
 }
+.right {
+  text-align: right;
+}
 
 /* From Zeplin */
 
