@@ -51,7 +51,8 @@ export default {
   color: $iconButton-batch-color;
   font-family: Poets;
   &.dark {
-    background-color: $iconButton-batch-dark-background-color;
+    background-color: $iconButton-dark-batch-background-color;
+    color: $iconButton-dark-batch-color;
   }
 }
 </style>

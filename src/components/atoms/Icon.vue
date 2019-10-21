@@ -15,7 +15,6 @@ export default {
   },
   data() {
     return {
-      dir: this.dark ? '/img/icons/ui/black/' : '/img/icons/ui/white/',
       icons: {
         'person': 'person.svg',
         'cart': 'cart.svg',
@@ -24,6 +23,9 @@ export default {
     }
   },
   computed: {
+    dir() {
+      return this.dark ? '/img/icons/ui/black/' : '/img/icons/ui/white/'
+    },
     style() {
       return {
         backgroundImage: 'url(' + this.dir + this.icons[this.icon] + ')'
