@@ -45,6 +45,13 @@ a:hover, a:focus {
   text-decoration: none;
 }
 
+/* Helper Classes */
+@media only screen and (max-width: 770px) {
+  .mobileMarginBottom {
+    margin-bottom: 30px !important;
+  }
+}
+
 /* From Zeplin */
 
 .Headline-hausschrift-40-pt {
