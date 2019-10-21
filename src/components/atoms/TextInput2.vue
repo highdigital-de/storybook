@@ -1,6 +1,5 @@
 <template>
   <div class="textInput2">
-    <div class="label .hausschrift-22pt" v-if="label">{{label}}</div>
     <input
       type="text"
       class="inputField"
@@ -8,6 +7,7 @@
       v-bind:value="value"
       v-on:input="$emit('input', $event.target.value)"
     />
+    <div class="label" v-if="label">{{label}}</div>
   </div>
 </template>
 
@@ -33,6 +33,7 @@ export default {
 .textInput2 {
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   }
+  margin-bottom: $textinput2-margin-bottom;
 }
 .inputField {
   height: $textinput2-height;
@@ -41,10 +42,10 @@ export default {
   font-family: $textinput2-font-family;
   caret-color: $textinput2-caret-color;
   background-color: $textinput2-background-color;
-  margin-bottom: $textinput2-margin-bottom;
   box-sizing: border-box;
   width: 100%;
   border: none;
+  margin-bottom: 10px;
   &.limited {
     max-width: $textinput2-limited-max-width;
   }
