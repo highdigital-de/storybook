@@ -23,6 +23,7 @@ export default {
   z-index: 1;
   position: relative;
   display: inline-block;
+  margin-bottom: $koabutton-margin-bottom;
 }
 .main {
   position: relative;
