@@ -1,13 +1,13 @@
 <template>
-  <div class="ammountSelector">
+  <div class="ammountSelector" :class="{dark}">
     <div class="minusContainer button" @click="$emit('decrease')" >
-      <svg height="3.439" viewBox="0 0 9.559 3.439" width="9.559" xmlns="http://www.w3.org/2000/svg"><path d="m604.877 835.912h9.559v3.44h-9.559z" fill="#fff" transform="translate(-604.877 -835.912)"/></svg>
+      <svg height="3.439" viewBox="0 0 9.559 3.439" width="9.559" xmlns="http://www.w3.org/2000/svg"><path d="m604.877 835.912h9.559v3.44h-9.559z" :fill="dark ? '#000' : '#fff'" transform="translate(-604.877 -835.912)"/></svg>
     </div>
     <div class="ammount">
       {{ ammount }}
     </div>
     <div class="plusContainer button" @click="$emit('increase')">
-      <svg height="9.559" viewBox="0 0 9.559 9.559" width="9.559" xmlns="http://www.w3.org/2000/svg"><path d="m533.513 912.168v3.439h-3.08v3.039h-3.439v-3.039h-3.04v-3.439h3.04v-3.08h3.439v3.08z" fill="#fff" transform="translate(-523.954 -909.088)"/></svg>
+      <svg height="9.559" viewBox="0 0 9.559 9.559" width="9.559" xmlns="http://www.w3.org/2000/svg"><path d="m533.513 912.168v3.439h-3.08v3.039h-3.439v-3.039h-3.04v-3.439h3.04v-3.08h3.439v3.08z" :fill="dark ? '#000' : '#fff'" transform="translate(-523.954 -909.088)"/></svg>
     </div>
   </div>
 </template>
@@ -19,7 +19,8 @@ export default {
   name: "AmmountSelector",
   props: {
     ammount: Number,
-    onSelect: Function
+    onSelect: Function,
+    dark: Boolean
   },
   components: {
 
@@ -37,9 +38,12 @@ export default {
 
 .ammountSelector {
   display: flex;
-  color: white;
+  color: $white;
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
   
+  }
+  &.dark {
+    color: $black;
   }
 }
 .button {

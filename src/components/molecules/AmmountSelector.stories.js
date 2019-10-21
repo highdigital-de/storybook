@@ -40,4 +40,24 @@ storiesOf('Design System|Molecules/AmmountSelector', module)
   },
   {
     notes: 'Action are bound to storybook data. The component is a non-functional component that emits actions and does not calculate or safe state.',
+  })
+  .add('action bound dark', () => {
+    return {
+      components: { AmmountSelector },
+      template: `
+        <div style="background-color: #93c0e9;">
+          <AmmountSelector @decrease="onDecrease" @increase="onIncrease" :ammount="this.ammount" dark />
+        </div>
+        `,
+      data: () => ({
+        ammount: 1
+      }),
+      methods: {
+        onDecrease() {this.ammount -= 1},
+        onIncrease() {this.ammount += 1}
+      }
+    };
+  },
+  {
+    notes: 'Action are bound to storybook data. The component is a non-functional component that emits actions and does not calculate or safe state.',
   });
