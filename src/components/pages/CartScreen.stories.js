@@ -15,4 +15,11 @@ storiesOf('Design System|Pages/CartScreen', module)
     template: `<CartScreen isSubscription></CartScreen>`,
     data: () => ({ }),
   };
+})
+.add('is empty', () => {
+  return {
+    components: { CartScreen },
+    template: `<CartScreen isEmpty></CartScreen>`,
+    data: () => ({ }),
+  };
 });

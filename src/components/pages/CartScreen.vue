@@ -2,7 +2,27 @@
   <div class="cartScreen">
     <TopBar :marginTop="50" />
     <Hero noBorder :items="heroItems" />
-    <Container>
+
+    <template v-if="isEmpty">
+        <Container>
+          <div class="center">
+            <div class="Headline-hausschrift-40-pt">
+              dein warenkorb ist leer
+            </div>
+            <Whitespace />
+            <KoaButton>
+              koffein-kakao kaufen
+            </KoaButton>
+          </div>
+        </Container>
+      <BackgroundBanner backgroundColor="#10cfc9">
+        <Container>
+          <KoaTitle center>schon probiert?</KoaTitle>
+          <ProductCarousel :products="products" />
+        </Container>
+      </BackgroundBanner>
+    </template>
+    <Container v-else>
       <KoaHeadline>dein warenkorb</KoaHeadline>
       <div class="columns is-gapless is-mobile" v-for="(product, index) in cart.products" :key="index">
         <div class="column is-1">
@@ -103,6 +123,7 @@
 
 <script>
 import Container from './../atoms/Container.vue';
+import BackgroundBanner from './../atoms/BackgroundBanner.vue';
 import Button4 from './../atoms/Button4.vue';
 import KoaButton from './../atoms/KoaButton.vue';
 import Button3 from './../atoms/Button3.vue';
@@ -116,7 +137,7 @@ import Column from './../molecules/Column.vue';
 import TopBar from './../molecules/TopBar.vue';
 import Hero from './../molecules/Hero.vue';
 import TileRow from './../molecules/TileRow.vue';
-import ProductList from './../organisms/ProductList.vue';
+import ProductCarousel from './../organisms/ProductCarousel.vue';
 import Footer from './../organisms/Footer.vue';
 import AmmountSelector from './../molecules/AmmountSelector.vue';
 import TextInput from './../atoms/TextInput.vue';
@@ -142,7 +163,8 @@ const product2 = {
 export default {
   name: "CartScreen",
   props: {
-    isSubscription: Boolean
+    isSubscription: Boolean,
+    isEmpty: Boolean
   },
   components: {
     Columns,
@@ -153,7 +175,7 @@ export default {
     Button4,
     KoaButton,
     KoaTitle,
-    ProductList,
+    ProductCarousel,
     Whitespace,
     TileRow,
     Container,
@@ -162,7 +184,8 @@ export default {
     AmmountSelector,
     TextInput,
     Button3,
-    DropdownInput
+    DropdownInput,
+    BackgroundBanner
   },
   data() {
     return {
@@ -176,7 +199,19 @@ export default {
       deliveryOptions: [
         {label: 'Monatlich', value: 'monthly'},
         {label: 'Wöchentlich', value: 'weekly'}
-      ]
+      ],
+      products: [
+          product1,
+          product2,
+          product1Batch,
+          product2,
+          product1,
+          product2,
+          product1,
+          product2,
+          product1,
+          product2
+        ]
     }
   }
 }
