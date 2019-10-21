@@ -1,23 +1,16 @@
 <template>
   <div class="topBar" :style="style">
     <div class="logoContainer">
-      <img src="/img/koa-logo.png" class="logo">
+      <img src="/img/koa-logo.png" class="logo" />
     </div>
     <div class="left">
-      <a class="link">
-        koffein kakao
-      </a>
-      <a class="link">
-        shop
-      </a>
-      <a class="link">
-        koakult
-      </a>
-
+      <a class="link">koffein kakao</a>
+      <a class="link">shop</a>
+      <a class="link">koakult</a>
     </div>
     <div class="right">
       <IconButton icon="person" />
-      <IconButton icon="cart" />
+      <IconButton icon="cart" batch="1" />
       <IconButton icon="hamburger" />
     </div>
   </div>
@@ -36,23 +29,41 @@ export default {
   },
   data() {
     return {
+      onTop: true
     }
   },
   computed: {
     style() {
       return {
-        top: this.marginTop
+        top: this.marginTop,
+        backgroundColor: this.onTop ? 'transparent' : '#10cfc9'
+      }
+    }
+  },
+  methods: {
+    handleScroll(event) {
+      if (window.scrollY == 0) {
+        this.onTop = true
+      }
+      else {
+        this.onTop = false
       }
     }
   },
   components: {
     IconButton
+  },
+  created() {
+    window.addEventListener('scroll', this.handleScroll);
+  },
+  destroyed() {
+    window.removeEventListener('scroll', this.handleScroll);
   }
 }
 </script>
 
 <style lang="scss" scoped>
-@import '../../../hdui.scss';
+@import "../../../hdui.scss";
 
 .topBar {
   position: fixed;
@@ -62,6 +73,7 @@ export default {
   background-color: transparent;
   display: flex;
   z-index: 10;
+  transition: all 0.3s;
   a {
     text-decoration: none;
   }
@@ -72,7 +84,8 @@ export default {
 }
 .right {
   padding-top: 33px;
-  flex: 0 1 auto
+  padding-right: 33px;
+  flex: 0 1 auto;
 }
 .link {
   color: white;
