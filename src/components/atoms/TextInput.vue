@@ -36,6 +36,8 @@ export default {
   height: $textinput-height;
   padding: $textinput-padding;
   font-size: $textinput-font-size;
+  font-family: $textinput-font-family;
+  caret-color: $textinput-caret-color;
   box-sizing: border-box;
   width: 100%;
   border: none;
