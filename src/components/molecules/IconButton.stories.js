@@ -12,6 +12,15 @@ storiesOf('Design System|Molecules/IconButton', module)
     data: () => ({ }),
   };
 })
+.add('dark', () => {
+  return {
+    components: { IconButton },
+    template: `<div style="background-color: gray;">
+    <IconButton icon="person" dark />
+    </div>`,
+    data: () => ({ }),
+  };
+})
 .add('no data', () => {
   return {
     components: { IconButton },
@@ -35,6 +44,15 @@ storiesOf('Design System|Molecules/IconButton', module)
     components: { IconButton },
     template: `<div style="background-color: gray;">
     <IconButton icon="person" batch="22" />
+    </div>`,
+    data: () => ({ }),
+  };
+})
+.add('with batch 22 dark', () => {
+  return {
+    components: { IconButton },
+    template: `<div style="background-color: gray;">
+    <IconButton icon="person" batch="22" dark />
     </div>`,
     data: () => ({ }),
   };

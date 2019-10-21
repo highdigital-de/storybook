@@ -1,9 +1,9 @@
 <template>
   <div class="iconButton" @click="$emit('click')">
-    <div v-if="batch" class="batch">
+    <div v-if="batch" class="batch" :class="{dark}">
       {{ batch }}
     </div>
-    <Icon :icon="icon" />
+    <Icon :icon="icon" :dark="dark" />
   </div>
 </template>
 
@@ -14,7 +14,8 @@ export default {
   name: "IconButton",
   props: {
     icon: String,
-    batch: String
+    batch: String,
+    dark: Boolean
   },
   components: {
     Icon
@@ -49,5 +50,8 @@ export default {
   background-color: $iconButton-batch-background-color;
   color: $iconButton-batch-color;
   font-family: Poets;
+  &.dark {
+    background-color: $iconButton-batch-dark-background-color;
+  }
 }
 </style>

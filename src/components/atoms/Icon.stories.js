@@ -11,6 +11,15 @@ storiesOf('Design System|Atoms/Icon', module)
     data: () => ({ }),
   };
 })
+.add('dark person', () => {
+  return {
+    components: { Icon },
+    template: `<div style="background-color: gray;">
+    <Icon icon="person" dark />
+    </div>`,
+    data: () => ({ }),
+  };
+})
 .add('no data', () => {
   return {
     components: { Icon },

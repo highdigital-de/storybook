@@ -10,15 +10,16 @@ import Container from './../atoms/Container.vue'
 export default {
   name: "Icon",
   props: {
-    icon: String
+    icon: String,
+    dark: Boolean
   },
   data() {
     return {
-      dir: '/img/icons/ui/',
+      dir: this.dark ? '/img/icons/ui/black/' : '/img/icons/ui/white/',
       icons: {
-        'person': 'person_white.svg',
-        'cart': 'cart_white.svg',
-        'hamburger': 'hamburger_white.svg',
+        'person': 'person.svg',
+        'cart': 'cart.svg',
+        'hamburger': 'hamburger.svg',
       }
     }
   },
