@@ -19,6 +19,11 @@ export default {
         'person': 'person.svg',
         'cart': 'cart.svg',
         'hamburger': 'hamburger.svg',
+        'arrow_down': 'arrow_down.svg',
+        'arrow_left': 'arrow_left.svg',
+        'arrow_right': 'arrow_right.svg',
+        'arrow_right_small': 'arrow_right_small.svg',
+        'x': 'x.svg',
       }
     }
   },
