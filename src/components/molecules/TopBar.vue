@@ -1,5 +1,5 @@
 <template>
-  <div class="topBar" :style="style">
+  <div class="topBar" :class="{onTop}" :style="style">
     <div class="logoContainer">
       <img src="/img/koa-logo.png" class="logo" />
     </div>
@@ -9,9 +9,9 @@
       <a class="link">koakult</a>
     </div>
     <div class="right">
-      <IconButton icon="person" />
-      <IconButton icon="cart" batch="1" />
-      <IconButton icon="hamburger" />
+      <IconButton :dark="!onTop" icon="person" />
+      <IconButton :dark="!onTop" icon="cart" batch="1" />
+      <IconButton :dark="!onTop" icon="hamburger" />
     </div>
   </div>
 </template>
@@ -35,8 +35,7 @@ export default {
   computed: {
     style() {
       return {
-        top: this.marginTop,
-        backgroundColor: this.onTop ? 'transparent' : '#10cfc9'
+        top: this.marginTop
       }
     }
   },
@@ -70,12 +69,19 @@ export default {
   left: 0;
   right: 0;
   height: 102px;
-  background-color: transparent;
+  background-color: $turquoise;
+  color: $black;
   display: flex;
   z-index: 10;
   transition: all 0.3s;
   a {
     text-decoration: none;
+  }
+  &.onTop {
+    background-color: transparent;
+    .link {
+      color: $white;
+    }
   }
 }
 .left {
@@ -88,7 +94,7 @@ export default {
   flex: 0 1 auto;
 }
 .link {
-  color: white;
+  color: $black;
   padding: 5px 15px;
 }
 .logoContainer {
