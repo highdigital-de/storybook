@@ -56,7 +56,6 @@ a:hover, a:focus {
   line-height: normal;
   letter-spacing: 1px;
   text-align: left;
-  color: #000000;
 }
 
 .hausschrift-32pt {
@@ -68,7 +67,6 @@ a:hover, a:focus {
   line-height: normal;
   letter-spacing: 0.8px;
   text-align: left;
-  color: #000000;
 }
 
 .Text-Style {
@@ -80,7 +78,6 @@ a:hover, a:focus {
   line-height: 1.12;
   letter-spacing: 0.75px;
   text-align: left;
-  color: #000000;
 }
 
 .hausschrift-22pt {
@@ -92,7 +89,6 @@ a:hover, a:focus {
   line-height: 1.14;
   letter-spacing: 0.75px;
   text-align: left;
-  color: #ffffff;
 }
 
 .Subtitle-hausschrift-22-pt {
@@ -104,7 +100,6 @@ a:hover, a:focus {
   line-height: 1.14;
   letter-spacing: 0.75px;
   text-align: left;
-  color: #000000;
 }
 
 .Button-hausschrift-22-pt {
@@ -116,7 +111,6 @@ a:hover, a:focus {
   line-height: 1.2;
   letter-spacing: 0.75px;
   text-align: left;
-  color: #ffffff;
 }
 
 .Button-Futura-Std-18-pt {
@@ -128,7 +122,6 @@ a:hover, a:focus {
   line-height: 1.2;
   letter-spacing: 0.45px;
   text-align: left;
-  color: #1a1a18;
 }
 
 .Men-hausschrift-18-pt {
@@ -140,7 +133,6 @@ a:hover, a:focus {
   line-height: normal;
   letter-spacing: 0.45px;
   text-align: left;
-  color: #ffffff;
 }
 
 .Body-Futura-Std-15-pt {
@@ -152,5 +144,4 @@ a:hover, a:focus {
   line-height: 1.67;
   letter-spacing: normal;
   text-align: left;
-  color: #000000;
 }
