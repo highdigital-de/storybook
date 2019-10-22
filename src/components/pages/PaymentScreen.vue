@@ -18,6 +18,7 @@
           4.<br>Bestätigung
         </div>
       </div>
+      <KoaTitle>rechnungsadresse</KoaTitle>
       <div class="columns is-multiline">
         <div class="column is-half-tablet">
           <DropdownInput label="Anrede" placeholder="Bitte wählen" :options="salutationOptions" variant="yellow" />
@@ -42,10 +43,13 @@
         <div class="column is-half-tablet">
           <TextInput3 label="Stadt" />
         </div>
+        <div class="column is-half-tablet">
+          <DropdownInput label="Land" placeholder="Bitte wählen" :options="countryOptions" variant="yellow" />
+        </div>
       </div>
       <div class="columns is-mobile">
         <div class="column is-2-tablet is-offset-8-tablet is-6-mobile">
-          <Button3 fullWidth variant="yellow">zurück</Button3>
+          <Button3 fullWidth variant="yellowTransparent">zurück</Button3>
         </div>
         <div class="column is-2-tablet is-6-mobile">
           <Button3 fullWidth variant="yellow">weiter</Button3>
@@ -117,6 +121,10 @@ export default {
       salutationOptions: [
         {label: 'Herr', value: 'male'},
         {label: 'Frau', value: 'female'}
+      ],
+      countryOptions: [
+        {label: 'Deutschland', value: 'germany'},
+        {label: 'Schweiz', value: 'switzerland'}
       ],
     }
   }
