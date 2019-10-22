@@ -1,11 +1,11 @@
 <template>
-  <div class="paymentScreen">
+  <div class="CheckoutScreen_Payment">
     <TopBar :marginTop="50" />
     <Hero noBorder :items="heroItems" />
 
     <Container>
-      <div class="columns is-multiline is-mobile">
-        <div class="column is-3 center">
+      <div class="columns is-multiline is-mobile nav">
+        <div class="column is-3 center active">
           1.<br>Adresse
         </div>
         <div class="column is-3 center">
@@ -83,7 +83,7 @@ import TextInput3 from './../atoms/TextInput3.vue';
 import TabNavigation from './../molecules/TabNavigation.vue';
 
 export default {
-  name: "paymentScreen",
+  name: "CheckoutScreen_Payment",
   props: {
     isSubscription: Boolean,
   },
@@ -134,7 +134,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../../hdui.scss';
 
-.paymentScreen {
+.CheckoutScreen_Payment {
 }
 .productImage {
   width: 100%;
@@ -173,5 +173,11 @@ export default {
   @media only screen and (max-width: $breakpoint-mobile-landscape) {
     text-align: right;
   }
+}
+.nav {
+  color: $gray;
+}
+.active {
+  color: $black;
 }
 </style>
