@@ -18,6 +18,7 @@ export default {
       icons: {
         'person': 'person.svg',
         'cart': 'cart.svg',
+        'edit': 'edit.svg',
         'checked': 'checked.svg',
         'hamburger': 'hamburger.svg',
         'arrow_down': 'arrow_down.svg',
@@ -45,6 +46,7 @@ export default {
 @import '../../../hdui.scss';
 
 .icon {
+  display: inline-block;
   width: $icon-width;
   height: $icon-height;
   background-repeat: no-repeat;
