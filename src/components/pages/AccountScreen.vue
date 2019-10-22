@@ -105,7 +105,7 @@ export default {
   },
   data() {
     return {
-      heroItems: [{ background: "#eceff1" }],
+      heroItems: [{ background: "#bcbcbc" }],
       cart: {
         products: [
           product1,

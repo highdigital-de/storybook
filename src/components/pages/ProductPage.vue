@@ -66,7 +66,7 @@ export default {
   },
   data() {
     return {
-      heroItems: [{ background: "#eceff1" }],
+      heroItems: [{ background: "#bcbcbc" }],
       productBody: {
         text: {
           headline: 'mit natürlicher vanille aus madagaskar',

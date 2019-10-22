@@ -111,7 +111,7 @@ export default {
   },
   data() {
     return {
-      heroItems: [{ background: "#eceff1" }],
+      heroItems: [{ background: "#bcbcbc" }],
       tabs: [
         {title: 'Adresse'},
         {title: 'Lieferung'},

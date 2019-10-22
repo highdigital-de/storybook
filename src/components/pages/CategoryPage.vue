@@ -84,7 +84,7 @@ export default {
   },
   data() {
     return {
-      heroItems: [{ background: "#eceff1" }],
+      heroItems: [{ background: "#bcbcbc" }],
       products: [
         product1,
         product2,
