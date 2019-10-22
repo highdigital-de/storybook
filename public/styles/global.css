@@ -150,3 +150,8 @@ a:hover, a:focus {
   line-height: 1.67;
   letter-spacing: normal;
 }
+
+/* Helper for Bulma */
+.column {
+  box-sizing: border-box;
+}

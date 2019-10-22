@@ -1,7 +1,14 @@
 <template>
   <div class="tabNavigation">
-    <div v-for="(tab, index) in tabs" :key="index" class="tab center" :class="{highlight: index==active}" @click="$emit('select', index)">
-      {{ index+1 }}.<br />
+    <div
+      v-for="(tab, index) in tabs"
+      :key="index"
+      class="tab center"
+      :class="{highlight: index==active}"
+      @click="$emit('select', index)"
+    >
+      {{ index+1 }}.
+      <br />
       {{ tab.title }}
     </div>
   </div>
@@ -23,21 +30,23 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '../../../hdui.scss';
+@import "../../../hdui.scss";
 
 .tabNavigation {
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
-  
   }
   display: flex;
 }
 .tab {
   flex: 0 0 auto;
-  padding: 30px 60px;
+  padding: 30px 10px;
   color: grey;
   cursor: pointer;
   &.highlight {
     color: $black;
+  }
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+    padding: 30px 60px;
   }
 }
 </style>
