@@ -1,7 +1,6 @@
 <template>
   <div>
-    <OfferBanner text="schnapp dir pur: nur heute die 100 g packung für 2,99 euro kaufen!" />
-    <TopBar :marginTop="50" />
+    <TopBar banner="schnapp dir pur: nur heute die 100 g packung für 2,99 euro kaufen!" />
     <Hero1 />
     <Container>
       <Banner1 />
