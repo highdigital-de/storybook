@@ -86,6 +86,7 @@ export default {
   background-color: $turquoise;
   color: $black;
   display: flex;
+  justify-content: space-between;
   transition: all 0.3s;
   a {
     text-decoration: none;
@@ -100,26 +101,37 @@ export default {
 .left {
   padding-top: 33px;
   flex: 1 0 auto;
+  display: none;
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+    display: block;
+  }
 }
 .right {
-  padding-top: 33px;
-  padding-right: 33px;
+  padding-top: 15px;
+  padding-right: 0px;
   flex: 0 1 auto;
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+    padding-top: 20px;
+    padding-right: 25px;
+  }
 }
 .link {
   color: $black;
   padding: 5px 15px;
 }
 .logoContainer {
-  margin-left: -30px;
+  margin-left: -60px;
   background-color: white;
   padding-top: 20px;
   padding-left: 70px;
   box-sizing: border-box;
   flex: 0 1 auto;
-  transform: rotate(-6deg) translateY(-12px);
-  width: 227px;
+  transform: rotate(-6deg) translateY(-12px) scale(0.7);
+  width: 197px;
   height: 90px;
+  @media only screen and (min-width: $breakpoint-mobile-landscape) {
+    margin-left: -30px;
+  }
 }
 .logo {
   width: 120px;
@@ -130,10 +142,10 @@ export default {
 /* Enter and leave animations can use different */
 /* durations and timing functions.              */
 .slide-fade-enter-active {
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 }
 .slide-fade-leave-active {
-  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
 }
 .slide-fade-enter, .slide-fade-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {
