@@ -5,32 +5,46 @@
 
     <Container>
       <div class="columns is-multiline is-mobile nav">
-        <div class="column is-3 center">
+        <div class="column is-3 center active">
           1.<br>Adresse
         </div>
         <div class="column is-3 center">
           2.<br>Lieferung
         </div>
-        <div class="column is-3 center active">
+        <div class="column is-3 center">
           3.<br>Zahlung
         </div>
         <div class="column is-3 center">
           4.<br>Bestätigung
         </div>
       </div>
-      <KoaTitle>Zahlungsart</KoaTitle>
+      <KoaTitle>rechnungsadresse</KoaTitle>
       <div class="columns is-multiline">
-        <div class="column is-7">
-          <CheckboxInput label="paypal" :value="true" />
+        <div class="column is-half-tablet">
+          <DropdownInput label="Anrede" placeholder="Bitte wählen" :options="salutationOptions" variant="yellow" />
         </div>
-        <div class="column is-7">
-          <CheckboxInput label="kreditkarte" :value="false" />
+      </div>
+      <div class="columns is-multiline">
+        <div class="column is-half-tablet">
+          <TextInput3 label="Vorname" />
         </div>
-        <div class="column is-7">
-          <CheckboxInput label="sepa lastschrift" :value="false" />
+        <div class="column is-half-tablet">
+          <TextInput3 label="Nachname" />
         </div>
-        <div class="column is-7">
-          <CheckboxInput label="sepa überweisung" :value="false" />
+        <div class="column is-half-tablet">
+          <TextInput3 label="Email" />
+        </div>
+        <div class="column is-half-tablet">
+          <TextInput3 label="Straße und Hausnummer" />
+        </div>
+        <div class="column is-half-tablet">
+          <TextInput3 label="Postleitzahl" />
+        </div>
+        <div class="column is-half-tablet">
+          <TextInput3 label="Stadt" />
+        </div>
+        <div class="column is-half-tablet">
+          <DropdownInput label="Land" placeholder="Bitte wählen" :options="countryOptions" variant="yellow" />
         </div>
       </div>
       <div class="columns is-mobile">
@@ -67,7 +81,6 @@ import Footer from './../organisms/Footer.vue';
 import AmmountSelector from './../molecules/AmmountSelector.vue';
 import TextInput3 from './../atoms/TextInput3.vue';
 import TabNavigation from './../molecules/TabNavigation.vue';
-import CheckboxInput from './../atoms/CheckboxInput.vue';
 
 export default {
   name: "CheckoutScreen_Payment",
@@ -94,8 +107,7 @@ export default {
     Button3,
     DropdownInput,
     BackgroundBanner,
-    TabNavigation,
-    CheckboxInput
+    TabNavigation
   },
   data() {
     return {
