@@ -84,7 +84,7 @@
           <div class="hausschrift-22pt">
             gutschein
           </div>
-          <TextInput />
+          <TextInput2 limited />
           <div class="couponButtonContainer">
             <Button4 backgroundColor="#ffe904" color="black">Gutschein einlösen</Button4>
           </div>
@@ -140,7 +140,7 @@ import TileRow from './../molecules/TileRow.vue';
 import ProductCarousel from './../organisms/ProductCarousel.vue';
 import Footer from './../organisms/Footer.vue';
 import AmmountSelector from './../molecules/AmmountSelector.vue';
-import TextInput from './../atoms/TextInput.vue';
+import TextInput2 from './../atoms/TextInput2.vue';
 
 const product1 = {
   image: '/img/products/pur-produktbild@3x.png',
@@ -182,7 +182,7 @@ export default {
     Footer,
     Icon,
     AmmountSelector,
-    TextInput,
+    TextInput2,
     Button3,
     DropdownInput,
     BackgroundBanner
