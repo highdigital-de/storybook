@@ -16,6 +16,13 @@ storiesOf('Design System|Atoms/Button3', module)
       data: () => ({}),
     };
   })
+  .add('yellowTransparent', () => {
+    return {
+      components: { Button3 },
+      template: `<Button3 variant="yellowTransparent">Hello World</Button3>`,
+      data: () => ({}),
+    };
+  })
   .add('brown', () => {
     return {
       components: { Button3 },

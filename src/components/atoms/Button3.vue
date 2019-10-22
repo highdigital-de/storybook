@@ -57,6 +57,15 @@ export default {
       background-color: $turquoise;
     }
   }
+  &.yellowTransparent {
+    color: $yellow;
+    background-color: transparent;
+    border: solid 1px $yellow;
+    &:hover, &:focus {
+      color: $white;
+      background-color: $yellow;
+    }
+  }
   &.brown {
     color: $white;
     background-color: $brown;
