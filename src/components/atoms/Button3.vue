@@ -1,6 +1,6 @@
 <template>
-  <div class="button3">
-    <div class="main" :class="variant">
+  <div class="button3" :class="{fullWidth}">
+    <div class="main" :class="[variant, {fullWidth: fullWidth}]">
       <slot></slot>
     </div>
   </div>
@@ -11,7 +11,8 @@ export default {
   name: "Button3",
   props: {
     text: String,
-    variant: String
+    variant: String,
+    fullWidth: Boolean
   }
 }
 </script>
@@ -23,6 +24,10 @@ export default {
   z-index: 1;
   display: inline-block;
   margin: 2.5px;
+  &.fullWidth {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .main {
   position: relative;
@@ -59,6 +64,11 @@ export default {
       color: $black;
       background-color: $yellow;
     }
+  }
+  &.fullWidth {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
   }
 }
 

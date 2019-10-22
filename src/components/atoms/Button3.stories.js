@@ -23,6 +23,20 @@ storiesOf('Design System|Atoms/Button3', module)
       data: () => ({}),
     };
   })
+  .add('fullWidth', () => {
+    return {
+      components: { Button3 },
+      template: `<Button3 fullWidth>Hello World</Button3>`,
+      data: () => ({}),
+    };
+  })
+  .add('fullWidth yellow', () => {
+    return {
+      components: { Button3 },
+      template: `<Button3 fullWidth variant="yellow">Hello World</Button3>`,
+      data: () => ({}),
+    };
+  })
   .add('long text', () => {
     return {
       components: { Button3 },
