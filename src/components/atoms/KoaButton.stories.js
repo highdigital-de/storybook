@@ -16,6 +16,20 @@ storiesOf('Design System|Atoms/KoaButton', module)
       data: () => ({}),
     };
   })
+  .add('yellow fullWidth', () => {
+    return {
+      components: { KoaButton },
+      template: `<KoaButton fullWidth variant="yellow">Hello World</KoaButton>`,
+      data: () => ({}),
+    };
+  })
+  .add('fullWidth', () => {
+    return {
+      components: { KoaButton },
+      template: `<KoaButton fullWidth>Hello World</KoaButton>`,
+      data: () => ({}),
+    };
+  })
   .add('brown', () => {
     return {
       components: { KoaButton },

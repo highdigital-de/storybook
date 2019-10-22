@@ -1,6 +1,6 @@
 <template>
-  <div class="koaButton">
-    <div class="main" :class="variant">
+  <div class="koaButton" :class="{fullWidth}">
+    <div class="main" :class="[variant, {fullWidth: fullWidth}]">
       <slot></slot>
     </div>
   </div>
@@ -11,7 +11,8 @@ export default {
   name: "KoaButton",
   props: {
     text: String,
-    variant: String
+    variant: String,
+    fullWidth: Boolean
   }
 }
 </script>
@@ -24,6 +25,10 @@ export default {
   position: relative;
   display: inline-block;
   margin-bottom: $koabutton-margin-bottom;
+  &.fullWidth {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 .main {
   position: relative;
@@ -34,7 +39,7 @@ export default {
   width: 250px;
   height: 57px;
   text-align: center;
-  padding-top: 17px;
+  padding: 17px 22px;
   box-sizing: border-box;
   cursor: pointer;
   transition: all 0.3s;
@@ -93,6 +98,11 @@ export default {
         background-color: $brown;
       }
     }
+  }
+  &.fullWidth {
+    width: 100%;
+    max-width: 100%;
+    min-width: unset;
   }
 }
 
