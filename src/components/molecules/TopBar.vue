@@ -1,22 +1,30 @@
 <template>
-  <div class="topBar" :class="{onTop}" :style="style">
-    <div class="logoContainer">
-      <img src="/img/koa-logo.png" class="logo" />
-    </div>
-    <div class="left">
-      <a class="link">koffein kakao</a>
-      <a class="link">shop</a>
-      <a class="link">koakult</a>
-    </div>
-    <div class="right">
-      <IconButton :dark="!onTop" icon="person" />
-      <IconButton :dark="!onTop" icon="cart" batch="1" />
-      <IconButton :dark="!onTop" icon="hamburger" />
+  <div class="topBarContainer">
+    <transition name="slide-fade">
+      <div class="banner" v-if="banner && !bannerClosed">
+        <OfferBanner :text="banner" @close="bannerClosed = true" />
+      </div>
+    </transition>
+    <div class="topBar" :class="{onTop}" :style="style">
+      <div class="logoContainer">
+        <img src="/img/koa-logo.png" class="logo" />
+      </div>
+      <div class="left">
+        <a class="link">koffein kakao</a>
+        <a class="link">shop</a>
+        <a class="link">koakult</a>
+      </div>
+      <div class="right">
+        <IconButton :dark="!onTop" icon="person" />
+        <IconButton :dark="!onTop" icon="cart" batch="1" />
+        <IconButton :dark="!onTop" icon="hamburger" />
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import OfferBanner from './../atoms/OfferBanner.vue'
 import IconButton from './../molecules/IconButton.vue'
 
 export default {
@@ -25,11 +33,13 @@ export default {
     marginTop: {
       type: Number,
       default: 0
-    }
+    },
+    banner: String
   },
   data() {
     return {
-      onTop: true
+      onTop: true,
+      bannerClosed: false
     }
   },
   computed: {
@@ -50,7 +60,8 @@ export default {
     }
   },
   components: {
-    IconButton
+    IconButton,
+    OfferBanner
   },
   created() {
     window.addEventListener('scroll', this.handleScroll);
@@ -63,17 +74,18 @@ export default {
 
 <style lang="scss" scoped>
 @import "../../../hdui.scss";
-
-.topBar {
+.topBarContainer {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
+  z-index: 10;
+}
+.topBar {
   height: 102px;
   background-color: $turquoise;
   color: $black;
   display: flex;
-  z-index: 10;
   transition: all 0.3s;
   a {
     text-decoration: none;
@@ -113,5 +125,18 @@ export default {
   width: 120px;
   height: auto;
   transform: rotate(6deg);
+}
+
+/* Enter and leave animations can use different */
+/* durations and timing functions.              */
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .8s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+.slide-fade-enter, .slide-fade-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  margin-top: -50px;
 }
 </style>

@@ -4,12 +4,14 @@
       {{ text }}
     </div>
     <div class="close">
-      X
+      <IconButton icon="x" @click="$emit('close')"/>
     </div>
   </div>
 </template>
 
 <script>
+import IconButton from './../molecules/IconButton.vue'
+
 export default {
   name: "OfferBanner",
   props: {
@@ -33,6 +35,9 @@ export default {
         color: this.color
       }
     }
+  },
+  components: {
+    IconButton
   }
 }
 </script>
@@ -59,8 +64,8 @@ export default {
 }
 .close {
   position: absolute;
-  top: 14px;
-  right: 14px;
+  top: 2px;
+  right: 2px;
   cursor: pointer;
   font-size: 16px;
   transition: all 0.3s;

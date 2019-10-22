@@ -1,5 +1,6 @@
 import { storiesOf } from '@storybook/vue';
 import OfferBanner from './OfferBanner';
+import { action } from '@storybook/addon-actions';
 
 storiesOf('Design System|Atoms/OfferBanner', module)
 .add('default', () => {
