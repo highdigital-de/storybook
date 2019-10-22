@@ -27,7 +27,7 @@ export default {
   position: relative;
   background-color: $yellow;
   color: $black;
-  font-size: 18px;
+  font-size: 15px;
   min-width: 135px;
   height: 37px;
   text-align: center;
