@@ -46,6 +46,10 @@ export default {
   width: 100%;
   border: none;
   margin-bottom: 10px;
+  background-image: linear-gradient(to left, #bcbcbc 33%, rgba(255,255,255,0) 0%);
+  background-position: bottom;
+  background-size: 6px 2px;
+  background-repeat: repeat-x;
   &.limited {
     max-width: $textinput3-limited-max-width;
   }
