@@ -20,7 +20,7 @@ import TextInput2 from './components/atoms/TextInput2.vue'
 import TextInput3 from './components/atoms/TextInput3.vue'
 import Whitespace from './components/atoms/Whitespace.vue'
 import Carousel from './components/organisms/Carousel.vue'
-import Arrow from '@storefront-ui/vue/components/atoms/SfArrow/SfArrow.vue'
+import Arrow from '@storefront-ui/vue/src/components/atoms/SfArrow/SfArrow.vue'
 
 export {
   BackgroundBanner,
