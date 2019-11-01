@@ -46,12 +46,12 @@ export default {
     color: $white;
   }
   &.icon {
-    background-image: url('/img/icons/ui/black/arrow_right_small.svg');
+    background-image: url('/assets/img/icons/ui/black/arrow_right_small.svg');
     background-repeat: no-repeat;
     background-position: left 10px center;
     padding-left: 30px;
     &:active {
-      background-image: url('/img/icons/ui/white/arrow_right_small.svg');
+      background-image: url('/assets/img/icons/ui/white/arrow_right_small.svg');
     }
   }
 }

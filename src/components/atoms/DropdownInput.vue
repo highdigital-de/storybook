@@ -60,7 +60,7 @@ export default {
   box-sizing: border-box;
   width: 100%;
   border: none;
-  background-image: url('/img/icons/ui/arrow_down.svg');
+  background-image: url('/assets/img/icons/ui/arrow_down.svg');
   background-repeat: no-repeat;
   background-position: right 10px center;
   &.yellow {

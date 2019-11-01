@@ -52,7 +52,7 @@ export default {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 70%;
-    background-image: url('/img/icons/ui/black/checked.svg');
+    background-image: url('/assets/img/icons/ui/black/checked.svg');
   }
 }
 .labelContainer{
