@@ -30,9 +30,9 @@ export default {
     items: Array,
     settings: {
       type: Object,
-      default: {
+      default: () => ({
         perView: 3
-      }
+      })
     }
   },
   data() {
