@@ -13,7 +13,7 @@
         </div>
       </Column>
       <Column>
-        <img class="image" src="img/banner1.png">
+        <img class="image" src="/assets/img/banner1.png">
       </Column>
     </Columns>
   </div>
