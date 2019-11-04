@@ -7,7 +7,7 @@
             <SfHeroItem
               :background="item.background"
               :image="item.image"
-              :class="index === 0 ? customClass1 : index === 1 ? customClass2 : customClass3"
+              :class="index === 0 ? 'customClass1' : index === 1 ? 'customClass2' : 'customClass3'"
             >
               <template #call-to-action>
                 <div class="margin">
