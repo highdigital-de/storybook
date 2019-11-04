@@ -7,7 +7,7 @@
     </transition>
     <div class="topBar" :class="{onTop}" :style="style">
       <div class="logoContainer">
-        <img src="/img/koa-logo.png" class="logo" />
+        <img src="/assets/img/koa-logo.png" class="logo" />
       </div>
       <div class="left">
         <a class="link">koffein kakao</a>
