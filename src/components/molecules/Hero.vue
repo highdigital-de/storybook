@@ -22,6 +22,7 @@
 
 <script>
 import SfHero from '@storefront-ui/vue/src/components/organisms/SfHero/SfHero.vue'
+import SfHeroItem from '@storefront-ui/vue/src/components/organisms/SfHero/_internal/SfHeroItem.vue'
 import SfButton from '@storefront-ui/vue/src/components/atoms/SfButton/SfButton.vue'
 import InfoButton from './../molecules/InfoButton.vue'
 
@@ -29,6 +30,7 @@ export default {
   name: "Hero",
   components: {
     SfHero,
+    SfHeroItem,
     SfButton,
     InfoButton
   },
