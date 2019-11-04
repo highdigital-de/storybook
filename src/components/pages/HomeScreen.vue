@@ -56,7 +56,7 @@ import Column from './../molecules/Column.vue';
 import Footer from './../organisms/Footer.vue';
 
 export default {
-  name: "StartPageScreen",
+  name: "HomeScreen",
   components: {
     OfferBanner,
     Container,
