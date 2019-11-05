@@ -5,18 +5,18 @@
       <div v-if="text" class="text">{{ text }}</div>
     </div>
     <div class="button" v-if="buttonText">
-      <KoaButton >{{ buttonText }}</KoaButton>
+      <Button1 >{{ buttonText }}</Button1>
     </div>
   </div>
 </template>
 
 <script>
-import KoaButton from './../atoms/KoaButton.vue'
+import Button1 from './../atoms/Button1.vue'
 
 export default {
   name: "InfoButton",
   components: {
-    KoaButton
+    Button1
   },
   props: {
     title: String,

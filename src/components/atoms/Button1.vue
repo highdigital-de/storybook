@@ -1,5 +1,5 @@
 <template>
-  <div class="koaButton" :class="{fullWidth}">
+  <div class="button1" :class="{fullWidth}">
     <div class="main" :class="[variant, {fullWidth: fullWidth}]">
       <slot></slot>
     </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "KoaButton",
+  name: "Button1",
   props: {
     text: String,
     variant: String,
@@ -20,11 +20,11 @@ export default {
 <style lang="scss" scoped>
 @import '../../../hdui.scss';
 
-.koaButton {
+.button1 {
   z-index: 1;
   position: relative;
   display: inline-block;
-  margin-bottom: $koabutton-margin-bottom;
+  margin-bottom: $button1-margin-bottom;
   &.fullWidth {
     width: 100%;
     max-width: 100%;

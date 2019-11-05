@@ -12,12 +12,12 @@
           <div class="right" style="max-width: 335px; margin-bottom: 30px;">
             <a href="#">Passwort vergessen?</a>
           </div>
-          <KoaButton>anmelden</KoaButton>
+          <Button1>anmelden</Button1>
         </div>
         <div class="column">
           <KoaTitle>ich bin neukunde</KoaTitle>
-          <KoaButton>kundenkonto anlegen</KoaButton>
-          <KoaButton>als gast bestellen</KoaButton>
+          <Button1>kundenkonto anlegen</Button1>
+          <Button1>als gast bestellen</Button1>
         </div>
       </div>
     </Container>
@@ -29,7 +29,7 @@
 import Container from './../atoms/Container.vue';
 import BackgroundBanner from './../atoms/BackgroundBanner.vue';
 import Button4 from './../atoms/Button4.vue';
-import KoaButton from './../atoms/KoaButton.vue';
+import Button1 from './../atoms/Button1.vue';
 import Button3 from './../atoms/Button3.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
 import DropdownInput from './../atoms/DropdownInput.vue';
@@ -77,7 +77,7 @@ export default {
     Hero,
     KoaHeadline,
     Button4,
-    KoaButton,
+    Button1,
     KoaTitle,
     ProductCarousel,
     Whitespace,

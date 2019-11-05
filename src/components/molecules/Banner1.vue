@@ -7,9 +7,9 @@
           <div class="text">
             Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein:
           </div>
-          <KoaButton>
+          <Button1>
             mehr erfahren
-          </KoaButton>
+          </Button1>
         </div>
       </Column>
       <Column>
@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import KoaButton from './../atoms/KoaButton.vue'
+import Button1 from './../atoms/Button1.vue'
 import Columns from './../molecules/Columns.vue'
 import Column from './../molecules/Column.vue'
 
@@ -31,7 +31,7 @@ export default {
     }
   },
   components: {
-    KoaButton,
+    Button1,
     Columns,
     Column
   }

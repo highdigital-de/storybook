@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import KoaButton from './../atoms/KoaButton.vue'
+import Button1 from './../atoms/Button1.vue'
 import SfSection from '@storefront-ui/vue/src/components/molecules/SfSection/SfSection.vue'
 
 export default {
@@ -50,7 +50,7 @@ export default {
     };
   },
   components: {
-    KoaButton,
+    Button1,
     SfSection
   }
 }

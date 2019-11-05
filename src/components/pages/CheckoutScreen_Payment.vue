@@ -50,7 +50,7 @@
 import Container from './../atoms/Container.vue';
 import BackgroundBanner from './../atoms/BackgroundBanner.vue';
 import Button4 from './../atoms/Button4.vue';
-import KoaButton from './../atoms/KoaButton.vue';
+import Button1 from './../atoms/Button1.vue';
 import Button3 from './../atoms/Button3.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
 import DropdownInput from './../atoms/DropdownInput.vue';
@@ -81,7 +81,7 @@ export default {
     Hero,
     KoaHeadline,
     Button4,
-    KoaButton,
+    Button1,
     KoaTitle,
     ProductCarousel,
     Whitespace,

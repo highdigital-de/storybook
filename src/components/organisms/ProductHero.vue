@@ -28,7 +28,7 @@
             inkl. 7 % MwSt. zzgl. Versand<br />
             Lieferzeit: ca. 1-3 Tage nach DE
           </p>
-          <KoaButton :variant="colors.koaButton" >in den Warencorb</KoaButton>
+          <Button1 :variant="colors.button1" >in den Warencorb</Button1>
         </div>
         <div class="is-1">
           <img src="/img/screens/product/logos.png" width="80" class="logos" />
@@ -44,7 +44,7 @@ import KoaTitle from './../atoms/KoaTitle.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Batch from './../atoms/Batch.vue';
-import KoaButton from './../atoms/KoaButton.vue';
+import Button1 from './../atoms/Button1.vue';
 import RatingLink from './../molecules/RatingLink.vue';
 import AmmountSelector from './../molecules/AmmountSelector.vue';
 import FilterSelector from './../molecules/FilterSelector.vue';
@@ -57,7 +57,7 @@ export default {
       default: {
         background: '#93c0e9',
         color: '#ffffff',
-        koaButton: 'yellow'
+        button1: 'yellow'
       }
     },
     sizeOptions: {
@@ -76,7 +76,7 @@ export default {
     KoaTitle,
     KoaHeadline,
     Batch,
-    KoaButton,
+    Button1,
     RatingLink,
     AmmountSelector,
     FilterSelector

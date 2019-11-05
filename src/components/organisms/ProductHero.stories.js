@@ -10,7 +10,7 @@ storiesOf('Design System|Organisms/ProductHero', module)
         colors: {
           background: '#93c0e9',
           color: '#ffffff',
-          koaButton: 'yellow'
+          button1: 'yellow'
         },
         sizeOptions: [
           { label: '100 g', value: '100' },
