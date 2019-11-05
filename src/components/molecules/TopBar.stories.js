@@ -33,4 +33,42 @@ storiesOf('Design System|Molecules/TopBar', module)
     `,
     data: () => ({ }),
   };
+})
+.add('slot left', () => {
+  return {
+    components: { TopBar, Container, Hero1 },
+    template: `
+    <div>
+    <TopBar>
+      <template v-slot:left>
+        Hello
+      </template>
+    </TopBar>
+    <Hero1 />
+    <Container>
+      <div style="height: 200vh; background: linear-gradient(to bottom right, red , blue);"></div>
+    </Container>
+    </div>
+    `,
+    data: () => ({ }),
+  };
+})
+.add('slot right', () => {
+  return {
+    components: { TopBar, Container, Hero1 },
+    template: `
+    <div>
+    <TopBar>
+      <template v-slot:right>
+        Hello
+      </template>
+    </TopBar>
+    <Hero1 />
+    <Container>
+      <div style="height: 200vh; background: linear-gradient(to bottom right, red , blue);"></div>
+    </Container>
+    </div>
+    `,
+    data: () => ({ }),
+  };
 });

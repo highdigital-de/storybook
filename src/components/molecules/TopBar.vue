@@ -10,14 +10,18 @@
         <img src="/assets/img/koa-logo.png" class="logo" />
       </div>
       <div class="left">
-        <a class="link">koffein kakao</a>
-        <a class="link">shop</a>
-        <a class="link">koakult</a>
+        <slot name="left">
+          <a class="link">koffein kakao</a>
+          <a class="link">shop</a>
+          <a class="link">koakult</a>
+        </slot>
       </div>
       <div class="right">
-        <IconButton :dark="!onTop" icon="person" />
-        <IconButton :dark="!onTop" icon="cart" batch="1" />
-        <IconButton :dark="!onTop" icon="hamburger" />
+        <slot name="right">
+          <IconButton :dark="!onTop" icon="person" />
+          <IconButton :dark="!onTop" icon="cart" batch="1" />
+          <IconButton :dark="!onTop" icon="hamburger" />
+        </slot>
       </div>
     </div>
   </div>
@@ -113,6 +117,9 @@ export default {
   @media only screen and (min-width: $breakpoint-mobile-landscape) {
     padding-top: 20px;
     padding-right: 25px;
+  }
+  button, a {
+    float: right;
   }
 }
 .link {
