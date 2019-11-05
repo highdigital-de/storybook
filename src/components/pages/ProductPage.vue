@@ -25,7 +25,7 @@
 import Rating from './../atoms/Rating.vue';
 import Container from './../atoms/Container.vue';
 import Button2 from './../atoms/Button2.vue';
-import KoaHeadline from './../atoms/KoaHeadline.vue';
+import Headline from './../atoms/Headline.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Columns from './../molecules/Columns.vue';
@@ -50,7 +50,7 @@ export default {
     Column,
     TopBar,
     ProductHero,
-    KoaHeadline,
+    Headline,
     Button2,
     KoaTitle,
     ProductList,

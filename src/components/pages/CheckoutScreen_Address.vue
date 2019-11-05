@@ -66,7 +66,7 @@ import BackgroundBanner from './../atoms/BackgroundBanner.vue';
 import Button4 from './../atoms/Button4.vue';
 import Button1 from './../atoms/Button1.vue';
 import Button3 from './../atoms/Button3.vue';
-import KoaHeadline from './../atoms/KoaHeadline.vue';
+import Headline from './../atoms/Headline.vue';
 import DropdownInput from './../atoms/DropdownInput.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
 import Whitespace from './../atoms/Whitespace.vue';
@@ -92,7 +92,7 @@ export default {
     Column,
     TopBar,
     Hero,
-    KoaHeadline,
+    Headline,
     Button4,
     Button1,
     KoaTitle,

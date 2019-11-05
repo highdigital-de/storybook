@@ -7,10 +7,10 @@
           <img src="/img/screens/product/vanilla.png" class="image" />
         </div>
         <div class="column is-5">
-          <KoaHeadline>typ vanille</KoaHeadline>
+          <Headline>typ vanille</Headline>
           <RatingLink :score="4" :count="11" />
           <h3>verführerisch vanillig enthält koffeinhaltiges guarana super lecker</h3>
-          <KoaHeadline>3,59</KoaHeadline>
+          <Headline>3,59</Headline>
           <div>
             <Batch>-10%</Batch>statt 3,99€ pro 100g
           </div>
@@ -41,7 +41,7 @@
 <script>
 import Container from './../atoms/Container.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
-import KoaHeadline from './../atoms/KoaHeadline.vue';
+import Headline from './../atoms/Headline.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Batch from './../atoms/Batch.vue';
 import Button1 from './../atoms/Button1.vue';
@@ -74,7 +74,7 @@ export default {
     Container,
     Whitespace,
     KoaTitle,
-    KoaHeadline,
+    Headline,
     Batch,
     Button1,
     RatingLink,

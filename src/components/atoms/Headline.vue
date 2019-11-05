@@ -1,5 +1,5 @@
 <template>
-  <h2 class="koaHeadline" :class="{center: center}">
+  <h2 class="headline" :class="{center: center}">
     <slot>
     </slot>
   </h2>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "KoaHeadline",
+  name: "Headline",
   props: {
     center: Boolean
   }
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.koaHeadline {
+.headline {
   font-family: Poets;
   font-size: 40px;
   font-weight: normal;

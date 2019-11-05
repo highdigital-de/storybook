@@ -74,7 +74,7 @@ import Columns from './../molecules/Columns.vue';
 import Column from './../molecules/Column.vue';
 import Tile from './../molecules/Tile.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
-import KoaHeadline from './../atoms/KoaHeadline.vue';
+import Headline from './../atoms/Headline.vue';
 
 export default {
   name: "ProductBody",
@@ -97,7 +97,7 @@ export default {
     Container,
     Columns,
     Column,
-    KoaHeadline,
+    Headline,
     Whitespace,
     KoaTitle,
     Tile,
