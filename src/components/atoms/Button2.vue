@@ -1,5 +1,5 @@
 <template>
-  <div class="koaFilterButton">
+  <div class="button2">
     <div class="button" :style="style" :class="{active: active, white: white}" @click="$emit('click')">
       <slot></slot>
     </div>
@@ -8,7 +8,7 @@
 
 <script>
 export default {
-  name: "KoaFilterButton",
+  name: "Button2",
   props: {
     text: String,
     color: {
@@ -36,11 +36,11 @@ export default {
 <style lang="scss" scoped>
 @import "../../../hdui.scss";
 
-.koaFilterButton {
+.button2 {
   z-index: 1;
   display: inline-block;
-  margin-right: $koafilterbutton-margin-right;
-  margin-bottom: $koafilterbutton-margin-bottom;
+  margin-right: $button2-margin-right;
+  margin-bottom: $button2-margin-bottom;
 }
 .button {
   position: relative;

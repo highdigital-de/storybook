@@ -24,7 +24,7 @@
 <script>
 import Rating from './../atoms/Rating.vue';
 import Container from './../atoms/Container.vue';
-import KoaFilterButton from './../atoms/KoaFilterButton.vue';
+import Button2 from './../atoms/Button2.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
 import Whitespace from './../atoms/Whitespace.vue';
@@ -51,7 +51,7 @@ export default {
     TopBar,
     ProductHero,
     KoaHeadline,
-    KoaFilterButton,
+    Button2,
     KoaTitle,
     ProductList,
     Whitespace,

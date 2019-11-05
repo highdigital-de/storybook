@@ -8,10 +8,10 @@
       <div>Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man macht keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere?</div>
       <Whitespace />
       <div>
-        <KoaFilterButton active>mit Koffein</KoaFilterButton>
-        <KoaFilterButton>ohne Koffein</KoaFilterButton>
-        <KoaFilterButton>würzig</KoaFilterButton>
-        <KoaFilterButton>fruchtig</KoaFilterButton>
+        <Button2 active>mit Koffein</Button2>
+        <Button2>ohne Koffein</Button2>
+        <Button2>würzig</Button2>
+        <Button2>fruchtig</Button2>
       </div>
       <Whitespace />
       <ProductList :products="this.products" />
@@ -33,7 +33,7 @@
 
 <script>
 import Container from './../atoms/Container.vue';
-import KoaFilterButton from './../atoms/KoaFilterButton.vue';
+import Button2 from './../atoms/Button2.vue';
 import KoaHeadline from './../atoms/KoaHeadline.vue';
 import KoaTitle from './../atoms/KoaTitle.vue';
 import Whitespace from './../atoms/Whitespace.vue';
@@ -74,7 +74,7 @@ export default {
     TopBar,
     Hero,
     KoaHeadline,
-    KoaFilterButton,
+    Button2,
     KoaTitle,
     ProductList,
     Whitespace,

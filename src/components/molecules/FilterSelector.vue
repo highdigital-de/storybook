@@ -1,14 +1,14 @@
 <template>
   <div class="filterSelector">
-    <KoaFilterButton v-for="(option, index) in options" :key="index" @click="$emit('select', option.value)" :color="color" :backgroundColor="backgroundColor" :active="option.value == selected">
+    <Button2 v-for="(option, index) in options" :key="index" @click="$emit('select', option.value)" :color="color" :backgroundColor="backgroundColor" :active="option.value == selected">
       {{ option.label }}
-    </KoaFilterButton>
+    </Button2>
   </div>
 </template>
 
 <script>
 import Container from './../atoms/Container.vue'
-import KoaFilterButton from './../atoms/KoaFilterButton.vue'
+import Button2 from './../atoms/Button2.vue'
 
 export default {
   name: "FilterSelector",
@@ -27,7 +27,7 @@ export default {
   },
   components: {
     Container,
-    KoaFilterButton
+    Button2
   },
   methods: {
     select() {
