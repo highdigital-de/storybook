@@ -10,14 +10,14 @@
         <img src="/assets/img/koa-logo.png" class="logo" />
       </div>
       <div class="left">
-        <slot name="left">
+        <slot name="left" v-bind:dark="!onTop">
           <a class="link">koffein kakao</a>
           <a class="link">shop</a>
           <a class="link">koakult</a>
         </slot>
       </div>
       <div class="right">
-        <slot name="right">
+        <slot name="right" v-bind:dark="!onTop">
           <IconButton :dark="!onTop" icon="person" />
           <IconButton :dark="!onTop" icon="cart" batch="1" />
           <IconButton :dark="!onTop" icon="hamburger" />
