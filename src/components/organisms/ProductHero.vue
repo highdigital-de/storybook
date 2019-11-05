@@ -40,7 +40,7 @@
 
 <script>
 import Container from './../atoms/Container.vue';
-import KoaTitle from './../atoms/KoaTitle.vue';
+import Title from './../atoms/Title.vue';
 import Headline from './../atoms/Headline.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Batch from './../atoms/Batch.vue';
@@ -73,7 +73,7 @@ export default {
   components: {
     Container,
     Whitespace,
-    KoaTitle,
+    Title,
     Headline,
     Batch,
     Button1,

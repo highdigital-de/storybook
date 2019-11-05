@@ -3,27 +3,27 @@
     <Container>
       <Columns>
         <Column flex="2">
-          <KoaTitle>{{ text.headline }}</KoaTitle>
+          <Title>{{ text.headline }}</Title>
           <p>{{ text.body }}</p>
           <Whitespace />
           <img src="/img/placeholder_gray.png" width="474" height="267" class="translatedImage" />
           <Whitespace />
-          <KoaTitle>zubereitung</KoaTitle>
+          <Title>zubereitung</Title>
           <Columns>
             <Column smallHalf>
-              <KoaTitle>1.</KoaTitle>
+              <Title>1.</Title>
               <p>2 Telöffel koawach</p>
             </Column>
             <Column smallHalf>
-              <KoaTitle>2.</KoaTitle>
+              <Title>2.</Title>
               <p>mit natürlicher vanille aus madagaskar</p>
             </Column>
             <Column smallHalf>
-              <KoaTitle>3.</KoaTitle>
+              <Title>3.</Title>
               <p>zu einer cremigen Masse verrühren.</p>
             </Column>
             <Column smallHalf>
-              <KoaTitle>4.</KoaTitle>
+              <Title>4.</Title>
               <p>Mit 180 ml Flüssigkeit heiß oder kalt aufgießen.</p>
             </Column>
           </Columns>
@@ -41,7 +41,7 @@
         <Column flex="2">
           <Columns>
             <Column flex="1">
-              <KoaTitle>zutaten</KoaTitle>
+              <Title>zutaten</Title>
               <p>
                 52% Kakao*
                 Kokosblütenzucker*
@@ -52,13 +52,13 @@
               </p>
             </Column>
             <Column flex="2">
-              <KoaTitle>nährwertangaben je 100 g</KoaTitle>
+              <Title>nährwertangaben je 100 g</Title>
               <NutritionInformation :info="nutritionInformation" />
             </Column>
           </Columns>
         </Column>
         <Column flex="1">
-          <KoaTitle>hinweise</KoaTitle>
+          <Title>hinweise</Title>
           <p>Eine Portion (200 ml) koawach Vanille enthält rund 62 mg Koffein (31 mg/100 ml). Nicht für Kinder, Schwangere und Stillende geeignet.</p>
         </Column>
       </Columns>
@@ -73,7 +73,7 @@ import NutritionInformation from './../molecules/NutritionInformation.vue';
 import Columns from './../molecules/Columns.vue';
 import Column from './../molecules/Column.vue';
 import Tile from './../molecules/Tile.vue';
-import KoaTitle from './../atoms/KoaTitle.vue';
+import Title from './../atoms/Title.vue';
 import Headline from './../atoms/Headline.vue';
 
 export default {
@@ -99,7 +99,7 @@ export default {
     Column,
     Headline,
     Whitespace,
-    KoaTitle,
+    Title,
     Tile,
     NutritionInformation
   }

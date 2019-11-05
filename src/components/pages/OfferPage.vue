@@ -4,7 +4,7 @@
     <Hero noBorder :items="heroItems" />
     <Container>
       <Headline>kakaopulver</Headline>
-      <KoaTitle>unsere kakaopulver im Überblick</KoaTitle>
+      <Title>unsere kakaopulver im Überblick</Title>
       <div>Hallo. Ich bin ein kleiner Blindtext. Und zwar schon so lange ich denken kann. Es war nicht leicht zu verstehen, was es bedeutet, ein blinder Text zu sein: Man macht keinen Sinn. Wirklich keinen Sinn. Man wird zusammenhangslos eingeschoben und rumgedreht – und oftmals gar nicht erst gelesen. Aber bin ich allein deshalb ein schlechterer Text als andere?</div>
       <Whitespace />
       <ProductList :products="this.products" />
@@ -28,7 +28,7 @@
 import Container from './../atoms/Container.vue';
 import Button2 from './../atoms/Button2.vue';
 import Headline from './../atoms/Headline.vue';
-import KoaTitle from './../atoms/KoaTitle.vue';
+import Title from './../atoms/Title.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Columns from './../molecules/Columns.vue';
 import Column from './../molecules/Column.vue';
@@ -70,7 +70,7 @@ export default {
     Hero,
     Headline,
     Button2,
-    KoaTitle,
+    Title,
     ProductList,
     Whitespace,
     TileRow,

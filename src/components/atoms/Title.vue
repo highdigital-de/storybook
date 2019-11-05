@@ -1,5 +1,5 @@
 <template>
-  <h3 class="koaTitle" :class="{center: center}">
+  <h3 class="title" :class="{center: center}">
     <slot>
     </slot>
   </h3>
@@ -7,7 +7,7 @@
 
 <script>
 export default {
-  name: "KoaTitle",
+  name: "Title",
   props: {
     center: Boolean
   }
@@ -15,7 +15,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.koaTitle {
+.title {
   font-family: Poets;
   font-size: 30px;
   font-weight: normal;

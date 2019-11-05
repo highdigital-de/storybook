@@ -18,7 +18,7 @@
           4.<br>Bestätigung
         </div>
       </div>
-      <KoaTitle>Zahlungsart</KoaTitle>
+      <Title>Zahlungsart</Title>
       <div class="columns is-multiline">
         <div class="column is-7">
           <CheckboxInput label="paypal" :value="true" />
@@ -54,7 +54,7 @@ import Button1 from './../atoms/Button1.vue';
 import Button3 from './../atoms/Button3.vue';
 import Headline from './../atoms/Headline.vue';
 import DropdownInput from './../atoms/DropdownInput.vue';
-import KoaTitle from './../atoms/KoaTitle.vue';
+import Title from './../atoms/Title.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Icon from './../atoms/Icon.vue';
 import Columns from './../molecules/Columns.vue';
@@ -82,7 +82,7 @@ export default {
     Headline,
     Button4,
     Button1,
-    KoaTitle,
+    Title,
     ProductCarousel,
     Whitespace,
     TileRow,

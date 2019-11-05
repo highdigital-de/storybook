@@ -6,7 +6,7 @@
     <Container>
       <div class="columns">
         <div class="column">
-          <KoaTitle>ich bin bereits kunde</KoaTitle>
+          <Title>ich bin bereits kunde</Title>
           <TextInput2 limited label="Deine E-mail Adresse" />
           <TextInput2 limited label="Dein Passwort" />
           <div class="right" style="max-width: 335px; margin-bottom: 30px;">
@@ -15,7 +15,7 @@
           <Button1>anmelden</Button1>
         </div>
         <div class="column">
-          <KoaTitle>ich bin neukunde</KoaTitle>
+          <Title>ich bin neukunde</Title>
           <Button1>kundenkonto anlegen</Button1>
           <Button1>als gast bestellen</Button1>
         </div>
@@ -33,7 +33,7 @@ import Button1 from './../atoms/Button1.vue';
 import Button3 from './../atoms/Button3.vue';
 import Headline from './../atoms/Headline.vue';
 import DropdownInput from './../atoms/DropdownInput.vue';
-import KoaTitle from './../atoms/KoaTitle.vue';
+import Title from './../atoms/Title.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Icon from './../atoms/Icon.vue';
 import Columns from './../molecules/Columns.vue';
@@ -78,7 +78,7 @@ export default {
     Headline,
     Button4,
     Button1,
-    KoaTitle,
+    Title,
     ProductCarousel,
     Whitespace,
     TileRow,

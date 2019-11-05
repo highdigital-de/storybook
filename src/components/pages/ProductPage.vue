@@ -6,14 +6,14 @@
     <Whitespace />
     <BackgroundBanner backgroundColor="#c5ddf3">
       <Container>
-        <KoaTitle><Rating :score="5" />11 kundenbewertungen</KoaTitle>
+        <Title><Rating :score="5" />11 kundenbewertungen</Title>
         <h3>neueste Bewertungen</h3>
         <ReviewSection :reviews="reviews"></ReviewSection>
       </Container>
     </BackgroundBanner>
     <BackgroundBanner backgroundColor="#92c0e9">
       <Container>
-        <KoaTitle center>andere leckere sorten für dich</KoaTitle>
+        <Title center>andere leckere sorten für dich</Title>
         <ProductCarousel :products="featuredProducts" />
       </Container>
     </BackgroundBanner>
@@ -26,7 +26,7 @@ import Rating from './../atoms/Rating.vue';
 import Container from './../atoms/Container.vue';
 import Button2 from './../atoms/Button2.vue';
 import Headline from './../atoms/Headline.vue';
-import KoaTitle from './../atoms/KoaTitle.vue';
+import Title from './../atoms/Title.vue';
 import Whitespace from './../atoms/Whitespace.vue';
 import Columns from './../molecules/Columns.vue';
 import Column from './../molecules/Column.vue';
@@ -52,7 +52,7 @@ export default {
     ProductHero,
     Headline,
     Button2,
-    KoaTitle,
+    Title,
     ProductList,
     Whitespace,
     TileRow,
