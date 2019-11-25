@@ -2,7 +2,8 @@
   <div class="carousel">
     <SfCarousel :settings="settings">
       <SfCarouselItem v-for="(item, index) in items" :key="index">
-        <img class="image" :src="item.image" />
+        <div v-if="typeof(item) === 'string'" v-html="item" />
+        <img v-else class="image" :src="item.image" />
       </SfCarouselItem>
 
       <template v-slot:prev="{ go }">
@@ -49,6 +50,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.carousel {
+  width: 1200px;
+}
 .image {
   width: 100%;
   height: auto;
