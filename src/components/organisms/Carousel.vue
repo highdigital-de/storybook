@@ -22,6 +22,7 @@
 
 <script>
 import SfCarousel from '@storefront-ui/vue/src/components/organisms/SfCarousel/SfCarousel.vue'
+import SfCarouselItem from '@storefront-ui/vue/src/components/organisms/SfCarousel/_internal/SfCarouselItem.vue'
 import IconButton from './../molecules/IconButton.vue';
 
 export default {
@@ -41,6 +42,7 @@ export default {
   },
   components: {
     SfCarousel,
+    SfCarouselItem,
     IconButton
   }
 }
