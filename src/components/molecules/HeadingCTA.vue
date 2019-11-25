@@ -4,7 +4,7 @@
       <span class="heading">{{ heading }}</span>
     </div>
     <div class="cta">
-    <Button4 icon>{{ cta }}</Button4>
+    <Button4 @click="$emit('click')" icon>{{ cta }}</Button4>
     </div>
   </div>
 </template>
@@ -18,7 +18,7 @@ export default {
   },
   props: {
     heading: String,
-    cta: String
+    cta: String,
   },
   data() {
     return {

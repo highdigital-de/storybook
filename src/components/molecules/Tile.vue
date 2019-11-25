@@ -2,7 +2,7 @@
   <div class="tile" :class="{ highlight, high, wide }" :style="tileStyle">
     <div class="mainSlot">
       <slot>
-        <HeadingCTA :heading="heading" :cta="cta" />
+        <HeadingCTA :heading="heading" :cta="cta" @click="$emit('click')" />
       </slot>
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
 .tile {
   position: relative;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding-top: 66.7%;
   overflow: hidden;
   background-size: cover;
