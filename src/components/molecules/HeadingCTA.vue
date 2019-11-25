@@ -3,11 +3,15 @@
     <div class="headingContainer">
       <span class="heading">{{ heading }}</span>
     </div>
-    <div class="cta">{{ cta }}</div>
+    <div class="cta">
+    <Button4 icon>{{ cta }}</Button4>
+    </div>
   </div>
 </template>
 
 <script>
+import Button4 from './../atoms/Button4.vue'
+
 export default {
   name: "Banner1",
   components: {
@@ -20,6 +24,9 @@ export default {
     return {
     }
   },
+  components: {
+    Button4
+  }
 }
 </script>
 
@@ -51,14 +58,9 @@ export default {
   -webkit-box-decoration-break: clone;
 }
 .cta {
-  background-color: #ffe904;
-  padding: 8px 13px;
+  padding-left: 13px;
   color: #1a1a18;
   flex: 0 1 auto;
   margin-left: 23px;
-  font-size: 18px;
-  &:before {
-    content: "> ";
-  }
 }
 </style>
