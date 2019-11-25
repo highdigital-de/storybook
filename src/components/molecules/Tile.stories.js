@@ -19,6 +19,17 @@ storiesOf('Design System|Molecules/Tile', module)
       }),
     };
   })
+  .add('long text', () => {
+    return {
+      components: { Tile },
+      template: `<div :style="this.style"><Tile image="/img/cacao-bg.jpg" heading="kakaopulver kakaopulver kakaopulver kakaopulver kakaopulver kakaopulver kakaopulver kakaopulver " cta="jetzt entdecken" /></div>`,
+      data: () => ({
+        style: {
+          width: '505px'
+        }
+      }),
+    };
+  })
   .add('highlight', () => {
     return {
       components: { Tile },

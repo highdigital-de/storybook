@@ -36,13 +36,19 @@ export default {
   display: table;
   padding: 8px 13px;
   padding-bottom: 0;
-  margin-bottom: 2px;
+  margin-bottom: 0px;
 }
 .heading {
   font-size: 30px;
   line-height: 43px;
   font-family: Poets;
-  background: repeating-linear-gradient(transparent, transparent 0px, $white 0px, $white 43px, transparent 43px, transparent 45px)
+  background: repeating-linear-gradient(transparent, transparent 0px, $white 0px, $white 43px, transparent 43px, transparent 65px);
+  padding-top: 6px;
+  padding-bottom: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
 }
 .cta {
   background-color: #ffe904;
