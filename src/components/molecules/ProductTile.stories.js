@@ -9,7 +9,7 @@ storiesOf('Design System|Molecules/ProductTile', module)
     data: () => ({
       product: {
         image: '/img/products/pur-produktbild@3x.png',
-        title: 'koawach pur',
+        name: 'koawach pur',
         subtitle: 'purer Kakaogenuss',
         price: 3.99
       }
@@ -23,7 +23,7 @@ storiesOf('Design System|Molecules/ProductTile', module)
     data: () => ({
       product: {
         image: '/img/products/pur-produktbild@3x.png',
-        title: 'koawach pur',
+        name: 'koawach pur',
         subtitle: 'purer Kakaogenuss',
         price: 3.99,
         batch: '100g Packung: -20%',

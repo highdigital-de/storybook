@@ -1,7 +1,7 @@
 <template>
   <div class="productTile">
     <img :src="product.image" class="productImage" />
-    <h3 class="title">{{ product.title }}</h3>
+    <h3 class="title">{{ product.name }}</h3>
     <div>{{ product.subtitle }}</div>
     <h3 class="price">{{ product.price }}</h3>
     <div class="batch" v-if="product.batch">{{ product.batch }}</div>
