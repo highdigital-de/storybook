@@ -1,9 +1,9 @@
 <template>
   <div class="headingCTA">
-    <div class="headingContainer">
+    <div class="headingContainer" v-if="heading">
       <span class="heading">{{ heading }}</span>
     </div>
-    <div class="cta">
+    <div class="cta" v-if="cta">
     <Button4 @click="$emit('click')" icon>{{ cta }}</Button4>
     </div>
   </div>
