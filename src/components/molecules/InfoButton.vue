@@ -4,7 +4,7 @@
       <h2 v-if="title">{{ title }}</h2>
       <div v-if="text" class="text">{{ text }}</div>
     </div>
-    <div class="button" v-if="buttonText">
+    <div class="buttonContainer" v-if="buttonText">
       <Button1 >{{ buttonText }}</Button1>
     </div>
   </div>
@@ -37,13 +37,14 @@ export default {
 
 <style lang="scss" scoped>
 .infoButton {
-  display: flex;
+  position: relative;
   flex-flow: column nowrap;
   align-items: flex-start;
   max-width: 520px;
   position: relative;
 }
 .info {
+  position: relative;
   background-color: white;
   padding: 10px 25px;
   padding-bottom: 25px;
@@ -51,10 +52,10 @@ export default {
     margin: 0;
   }
 }
-.button {
+.buttonContainer {
   position: absolute;
   right: -25px;
-  bottom: -44px;
+  bottom: -80px;
   z-index: 1;
 }
 </style>
