@@ -1,5 +1,5 @@
 <template>
-  <div class="button1" :class="{fullWidth}">
+  <div class="storybook_button1" :class="{fullWidth}">
     <div class="main" :class="[variant, {fullWidth: fullWidth}]">
       <slot></slot>
     </div>
@@ -20,7 +20,7 @@ export default {
 <style lang="scss" scoped>
 @import '../../../hdui.scss';
 
-.button1 {
+.storybook_button1 {
   z-index: 1;
   position: relative;
   display: inline-block;
