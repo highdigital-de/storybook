@@ -17,6 +17,16 @@
             </SfHeroItem>
           </div>
         </template>
+        <template v-slot:prev="{ go }">
+          <div @click="go">
+          <IconButton icon="arrow_left" dark />
+          </div>
+        </template>
+        <template v-slot:next="{ go }">
+          <div @click="go">
+          <IconButton icon="arrow_right" dark />
+          </div>
+        </template>
       </SfHero>
     </div>
   </div>
@@ -27,6 +37,7 @@ import SfHero from '@storefront-ui/vue/src/components/organisms/SfHero/SfHero.vu
 import SfHeroItem from '@storefront-ui/vue/src/components/organisms/SfHero/_internal/SfHeroItem.vue'
 import SfButton from '@storefront-ui/vue/src/components/atoms/SfButton/SfButton.vue'
 import InfoButton from './../molecules/InfoButton.vue'
+import IconButton from './../molecules/IconButton.vue'
 
 export default {
   name: "Hero",
@@ -34,7 +45,8 @@ export default {
     SfHero,
     SfHeroItem,
     SfButton,
-    InfoButton
+    InfoButton,
+    IconButton
   },
   props: {
     items: Array,
