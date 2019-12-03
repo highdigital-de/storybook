@@ -19,12 +19,12 @@
         </template>
         <template v-slot:prev="{ go }">
           <div @click="go">
-          <IconButton icon="arrow_left" dark />
+          <IconButton icon="arrow_left" />
           </div>
         </template>
         <template v-slot:next="{ go }">
           <div @click="go">
-          <IconButton icon="arrow_right" dark />
+          <IconButton icon="arrow_right" />
           </div>
         </template>
       </SfHero>
