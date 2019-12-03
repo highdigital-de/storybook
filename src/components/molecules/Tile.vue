@@ -44,7 +44,7 @@ export default {
   position: relative;
   width: 100%;
   height: 100%;
-  padding-top: 66.7%;
+  // padding-top: 66.7%;
   overflow: hidden;
   background-size: cover;
   background-color: #e3e3e3;
