@@ -21,7 +21,8 @@ export default {
   props: {
     title: String,
     text: String,
-    buttonText: String
+    buttonText: String,
+    link: String
   },
   data() {
     return {

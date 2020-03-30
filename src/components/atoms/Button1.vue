@@ -36,7 +36,8 @@ export default {
   transform-style: preserve-3d;
   color: $white;
   font-size: 22px;
-  width: 250px;
+  min-width: 250px;
+  width: auto;
   height: 57px;
   text-align: center;
   padding: 17px 22px;

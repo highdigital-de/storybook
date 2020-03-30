@@ -1,7 +1,7 @@
 <template>
   <div class="heroContainer" :class="{ border: !noBorder }">
     <div class="hero">
-      <SfHero :sliderOptions="{autoplay: false}">
+      <SfHero :sliderOptions="{}">
         <template>
           <div v-for="(item, index) in items" :key="index">
             <SfHeroItem
@@ -11,7 +11,7 @@
             >
               <template #call-to-action>
                 <div class="margin">
-                  <InfoButton :title="item.title" :text="item.text" :buttonText="item.buttonText" />
+                  <InfoButton :title="item.title" :text="item.text" :buttonText="item.buttonText" :link="item.link" />
                 </div>
               </template>
             </SfHeroItem>
