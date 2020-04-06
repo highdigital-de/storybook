@@ -5,7 +5,7 @@
       <div v-if="text" class="text">{{ text }}</div>
     </div>
     <div class="buttonContainer" v-if="buttonText">
-      <a :href="link">
+      <a :href="link" target="_new">
         <Button1 >{{ buttonText }}</Button1>
       </a>
     </div>
