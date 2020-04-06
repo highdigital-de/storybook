@@ -5,9 +5,12 @@
       <div v-if="text" class="text">{{ text }}</div>
     </div>
     <div class="buttonContainer" v-if="buttonText">
-      <a :href="link" target="_new">
+      <a :href="link" target="_new" v-if="isExternalLink(link)">
         <Button1 >{{ buttonText }}</Button1>
       </a>
+      <router-link :to="localizedRoute(link)" v-else>
+        <Button1 >{{ buttonText }}</Button1>
+      </router-link>
     </div>
   </div>
 </template>
@@ -33,6 +36,11 @@ export default {
   computed: {
     visible() {
       return !!this.title || !!this.text || !!this.buttonText;
+    }
+  },
+  methods: {
+    isExternalLink (link) {
+      return (/(http(s?)):\/\//i.test(link))
     }
   }
 }
