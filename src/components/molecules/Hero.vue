@@ -5,7 +5,7 @@
         <template>
           <div v-for="(item, index) in items" :key="index">
             <SfHeroItem
-              :background="item.background"
+              v-lazy:background-image="item.background"
               :image="item.image"
               :class="index === 0 ? 'customClass1' : index === 1 ? 'customClass2' : 'customClass3'"
             >
