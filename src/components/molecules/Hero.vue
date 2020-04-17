@@ -4,27 +4,42 @@
       <SfHero :sliderOptions="{}">
         <template>
           <div v-for="(item, index) in items" :key="index">
-            <SfHeroItem
-              :background="item.background"
-              :image="item.image"
-              :class="index === 0 ? 'customClass1' : index === 1 ? 'customClass2' : 'customClass3'"
-            >
-              <template #call-to-action>
-                <div class="margin">
-                  <InfoButton :title="item.title" :text="item.text" :buttonText="item.buttonText" :link="item.link" />
-                </div>
-              </template>
-            </SfHeroItem>
+            <a :href="item.link" target="_new" v-if="isExternalLink(item.link)">
+              <SfHeroItem
+                      :background="item.background"
+                      :image="item.image"
+                      :class="index === 0 ? 'customClass1' : index === 1 ? 'customClass2' : 'customClass3'"
+              >
+                <template #call-to-action>
+                  <div class="margin">
+                    <InfoButton :title="item.title" :text="item.text" :buttonText="item.buttonText" :link="item.link" />
+                  </div>
+                </template>
+              </SfHeroItem>
+            </a>
+            <router-link :to="localizedRoute(item.link)" v-else>
+              <SfHeroItem
+                      :background="item.background"
+                      :image="item.image"
+                      :class="index === 0 ? 'customClass1' : index === 1 ? 'customClass2' : 'customClass3'"
+              >
+                <template #call-to-action>
+                  <div class="margin">
+                    <InfoButton :title="item.title" :text="item.text" :buttonText="item.buttonText" :link="item.link" />
+                  </div>
+                </template>
+              </SfHeroItem>
+            </router-link>
           </div>
         </template>
         <template v-slot:prev="{ go }">
           <div @click="go">
-          <IconButton icon="arrow_left" />
+            <IconButton icon="arrow_left" />
           </div>
         </template>
         <template v-slot:next="{ go }">
           <div @click="go">
-          <IconButton icon="arrow_right" />
+            <IconButton icon="arrow_right" />
           </div>
         </template>
       </SfHero>
@@ -33,47 +48,52 @@
 </template>
 
 <script>
-import SfHero from '@storefront-ui/vue/src/components/organisms/SfHero/SfHero.vue'
-import SfHeroItem from '@storefront-ui/vue/src/components/organisms/SfHero/_internal/SfHeroItem.vue'
-import SfButton from '@storefront-ui/vue/src/components/atoms/SfButton/SfButton.vue'
-import InfoButton from './../molecules/InfoButton.vue'
-import IconButton from './../molecules/IconButton.vue'
+  import SfHero from '@storefront-ui/vue/src/components/organisms/SfHero/SfHero.vue'
+  import SfHeroItem from '@storefront-ui/vue/src/components/organisms/SfHero/_internal/SfHeroItem.vue'
+  import SfButton from '@storefront-ui/vue/src/components/atoms/SfButton/SfButton.vue'
+  import InfoButton from './../molecules/InfoButton.vue'
+  import IconButton from './../molecules/IconButton.vue'
 
-export default {
-  name: "Hero",
-  components: {
-    SfHero,
-    SfHeroItem,
-    SfButton,
-    InfoButton,
-    IconButton
-  },
-  props: {
-    items: Array,
-    noBorder: Boolean
-  },
-  data() {
-    return {
-      
+  export default {
+    name: "Hero",
+    components: {
+      SfHero,
+      SfHeroItem,
+      SfButton,
+      InfoButton,
+      IconButton
+    },
+    props: {
+      items: Array,
+      noBorder: Boolean
+    },
+    data() {
+      return {
+
+      }
+    },
+    methods: {
+      isExternalLink (link) {
+        return (/(http(s?)):\/\//i.test(link))
+      }
     }
   }
-}
 </script>
 
 <style lang="scss" scoped>
-@import '../../../hdui.scss';
+  @import '../../../hdui.scss';
 
-.heroContainer {
-  &.border {
-    filter: drop-shadow(0px 4px 0px #10cfc9);
+  .heroContainer {
+    &.border {
+      filter: drop-shadow(0px 4px 0px #10cfc9);
+    }
   }
-}
-.hero {
-  @include clip-border;
-  padding-bottom: 0;
-}
-.margin {
-  margin-top: 200px;
-  margin-bottom: 80px;
-}
+  .hero {
+    @include clip-border;
+    padding-bottom: 0;
+  }
+  .margin {
+    margin-top: 200px;
+    margin-bottom: 80px;
+  }
 </style>
